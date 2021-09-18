@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{d61c0cf8-c87a-421d-bb8f-6bd6211312f6}">
+		<property name="assetPath">
+			<value>PinAttackSFX.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.68041666666666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{bafd4693-1861-4e66-88a9-f975c259f59f}</destination>
+		</relationship>
+	</object>
+</objects>
