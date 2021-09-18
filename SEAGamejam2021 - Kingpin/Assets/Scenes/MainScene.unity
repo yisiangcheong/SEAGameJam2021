@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2572,8 +2572,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -343.5, y: 270}
-  m_SizeDelta: {x: 687.0002, y: 540.00256}
+  m_AnchoredPosition: {x: -570.1, y: 270}
+  m_SizeDelta: {x: 1140.2869, y: 540.00256}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &558736122
 GameObject:
@@ -2845,6 +2845,84 @@ Transform:
   m_Father: {fileID: 1825508248}
   m_RootOrder: 126
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &647193239
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 647193240}
+  - component: {fileID: 647193242}
+  - component: {fileID: 647193241}
+  m_Layer: 0
+  m_Name: MultiplierLabel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &647193240
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647193239}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1230970451}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -9, y: 5}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &647193241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647193239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 85640717b50218c479c554613d981c67, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 263
+    m_Alignment: 5
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: <size=65>x </size><size=130>100</size>Pins
+--- !u!222 &647193242
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647193239}
+  m_CullTransparentMesh: 0
 --- !u!1 &648883667
 GameObject:
   m_ObjectHideFlags: 0
@@ -5559,7 +5637,7 @@ GameObject:
   - component: {fileID: 1230970450}
   - component: {fileID: 1230970449}
   m_Layer: 0
-  m_Name: MultiplierLabel
+  m_Name: MultiplierLabelShadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5578,26 +5656,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6132076, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 64
-    m_FontStyle: 1
+    m_Font: {fileID: 12800000, guid: 85640717b50218c479c554613d981c67, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 5
     m_MaxSize: 263
-    m_Alignment: 4
+    m_Alignment: 5
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: x1 Pins
+  m_Text: <size=65>x </size><size=130>100</size>Pins
 --- !u!222 &1230970450
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5616,14 +5694,15 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
-  m_Children: []
+  m_Children:
+  - {fileID: 647193240}
   m_Father: {fileID: 537873783}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 69.95166, y: 70.40332}
-  m_SizeDelta: {x: -280.76318, y: 140.80368}
+  m_AnchoredPosition: {x: -35.184, y: 116}
+  m_SizeDelta: {x: -70.36743, y: 232.0152}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1246028107
 GameObject:
@@ -6557,6 +6636,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 854936636398786767, guid: e98ece834fc54054e887f48f9ba9fab5,
     type: 3}
   initialPoolSize: 20
+  yOffset: 3
   poolList: []
 --- !u!4 &1460175411
 Transform:
@@ -9285,7 +9365,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f89340ded3ba58748aa4d20e6ba707cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  multiplierLabel: {fileID: 1230970449}
+  multiplierLabels:
+  - {fileID: 1230970449}
+  - {fileID: 647193241}
   enlargeDuration: 0.2
   enlargedScale: {x: 1.4, y: 1.4, z: 1.4}
   settleDuration: 0.2
