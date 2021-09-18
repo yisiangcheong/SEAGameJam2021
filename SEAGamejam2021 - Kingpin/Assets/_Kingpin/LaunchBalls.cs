@@ -101,6 +101,8 @@ public class LaunchBalls : MonoBehaviour
     void LaunchBall(Rigidbody ball, float force)
     {
         ball.AddForce(cameraFocus.forward * force * forceMultiplier, ForceMode.Impulse);//apply final charged force to the ball, multiplied by forceMultiplier
+
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.PlayerPunchEvent, ball.gameObject);
     }
 
     void ChargeForce()
