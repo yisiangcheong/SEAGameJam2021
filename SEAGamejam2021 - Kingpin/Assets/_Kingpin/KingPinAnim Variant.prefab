@@ -319,8 +319,8 @@ SpringJoint:
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: 89.99999, y: 154.57846, z: -3.600006}
   serializedVersion: 2
-  m_Spring: 500
-  m_Damper: 10
+  m_Spring: 500000
+  m_Damper: 10000
   m_MinDistance: 0
   m_MaxDistance: 0
   m_Tolerance: 0.025
@@ -469,8 +469,8 @@ SpringJoint:
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: -89.89999, y: 154.57846, z: -3.600006}
   serializedVersion: 2
-  m_Spring: 500
-  m_Damper: 10
+  m_Spring: 500000
+  m_Damper: 10000
   m_MinDistance: 0
   m_MaxDistance: 0
   m_Tolerance: 0.025
@@ -603,8 +603,8 @@ SpringJoint:
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: 37.71233, y: 0.00001692772, z: -0.000084757805}
   serializedVersion: 2
-  m_Spring: 500
-  m_Damper: 50
+  m_Spring: 50000
+  m_Damper: 5000
   m_MinDistance: 0
   m_MaxDistance: 0
   m_Tolerance: 0.025
@@ -675,8 +675,8 @@ SpringJoint:
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: -37.712383, y: -0.0000019073486, z: 0.0000019669533}
   serializedVersion: 2
-  m_Spring: 500
-  m_Damper: 50
+  m_Spring: 50000
+  m_Damper: 5000
   m_MinDistance: 0
   m_MaxDistance: 0
   m_Tolerance: 0.025
@@ -1305,12 +1305,13 @@ MonoBehaviour:
   cameraFocus: {fileID: 7244182487332942425}
   leftBall: {fileID: 1437370658926622739}
   rightBall: {fileID: 1437370658375331380}
-  minForce: 5
-  maxForce: 50
+  minForce: 10
+  maxForce: 100
   forceChargeRate: 10
   forceMultiplier: 20
   rightHandMode: 0
   kinematicFreezeDuration: 1
+  ballMaxDistance: 5
   breakEarly: 0
   isAttacking: 0
   canGroundPound: 0
@@ -1376,8 +1377,8 @@ SpringJoint:
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: 39.930927, y: -0.0000371933, z: 0.00000333786}
   serializedVersion: 2
-  m_Spring: 500
-  m_Damper: 50
+  m_Spring: 50000
+  m_Damper: 5000
   m_MinDistance: 0
   m_MaxDistance: 0
   m_Tolerance: 0.025
@@ -1448,8 +1449,8 @@ SpringJoint:
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: -39.93092, y: -0.0000014305115, z: -0.000002861023}
   serializedVersion: 2
-  m_Spring: 500
-  m_Damper: 50
+  m_Spring: 50000
+  m_Damper: 5000
   m_MinDistance: 0
   m_MaxDistance: 0
   m_Tolerance: 0.025
