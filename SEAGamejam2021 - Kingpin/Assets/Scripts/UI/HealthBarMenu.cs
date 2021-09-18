@@ -19,6 +19,4 @@ public class HealthBarMenu : MonoBehaviour
             FindObjectOfType<FadeController>().StartFade();
         }
     }
-
-    
 }

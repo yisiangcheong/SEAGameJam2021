@@ -45,6 +45,9 @@ public class PinAttackCollider : MonoBehaviour
                 direction = -direction.normalized;
 
                 FindObjectOfType<HealthBarMenu>().ReduceHeart();
+
+                AudioManager.Instance.PlaySFX(AudioManager.Instance.PlayerHurtEvent, gameObject);
+
                 pinController.Die(collision.transform.GetComponent<Rigidbody>().velocity.magnitude * pinController.CascadeMultiplier, direction, false, true);
             }
         }

@@ -40,6 +40,9 @@ public class PinController : MonoBehaviour
 
     [SerializeField] float minimumForceToDie = 10.0f;
 
+    //if TotalHitCount % bowlingStrikeAmount == 0, play the strike SFX
+    [SerializeField] int bowlingStrikeAmount = 10;
+
     [Header("Preview Controls")]
     [SerializeField] bool selfInit = false;
     [SerializeField] float force = 10.0f;
@@ -96,7 +99,15 @@ public class PinController : MonoBehaviour
         pinstate = PinState.Dead;
         StopAllCoroutines();
 
-        if (addToScore) multiplierMenu.AddScore();
+        if (addToScore)
+        {
+            multiplierMenu.AddScore();
+
+            if(multiplierMenu.totalHitCount%bowlingStrikeAmount == 0)
+            {
+                AudioManager.Instance.PlaySFX(AudioManager.Instance.PinBowlingStrikeEvent, gameObject);
+            }
+        }
         if (instantDecoration) pinModelCollider.TurnIntoDecoration();
 
         movementBody.isKinematic = true;
@@ -269,6 +280,7 @@ public class PinController : MonoBehaviour
             direction = -direction.normalized;
 
             hitEffectPooler.SpawnHitEffect(transform.position);
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.PinHurtEvent, gameObject);
             Die(collision.transform.GetComponent<Rigidbody>().velocity.magnitude * (MultiplierMenu.currentMultiplierPower / 10.0f + 1.0f), direction, true);
         }
     }
