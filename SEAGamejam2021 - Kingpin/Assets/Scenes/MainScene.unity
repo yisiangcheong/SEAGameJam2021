@@ -542,7 +542,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pinPrefab: {fileID: 1371378196099457163, guid: 0501fd099c0181f43b5c35a2f71246cc,
     type: 3}
-  maxTotalPins: 100
+  maxTotalPins: 200
   pinSpawnPoints:
   - {fileID: 875971605}
   - {fileID: 1462020880}
@@ -828,9 +828,8 @@ MonoBehaviour:
   - {fileID: 1510355857}
   - {fileID: 170668082}
   spawnPattern:
-  - {x: 3, y: 5}
-  - {x: 1, y: 2}
-  - {x: 2, y: 10}
+  - {x: 5, y: 10}
+  - {x: 10, y: 20}
   spawnInterval: 5
   minSpawningRadius: 35
   maxSpawningRadius: 50
