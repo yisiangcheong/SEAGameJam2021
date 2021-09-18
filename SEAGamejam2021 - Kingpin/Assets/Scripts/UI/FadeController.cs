@@ -8,6 +8,7 @@ using Ludus.Math;
 public class FadeController : MonoBehaviour
 {
     [SerializeField] string sceneToReload = "MainScene";
+    [SerializeField] string cutscene = "Cutscene";
     [SerializeField] Image fade = null;
     [SerializeField] float fadeDuration = 3.0f;
 
@@ -28,16 +29,16 @@ public class FadeController : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void StartFade()
+    public void StartFade(bool restartScene)
     {
         if (isFading) return;
         isFading = true;
 
         if (fadeOutRoutine != null) StopCoroutine(fadeOutRoutine);
-        fadeOutRoutine = StartCoroutine(FadeOutRoutine());
+        fadeOutRoutine = StartCoroutine(FadeOutRoutine(restartScene));
     }
 
-    IEnumerator FadeOutRoutine()
+    IEnumerator FadeOutRoutine(bool restartScene)
     {
         float timer = 0.0f;
 
@@ -51,7 +52,7 @@ public class FadeController : MonoBehaviour
 
         fade.color = fullAlpha;
 
-        SceneManager.LoadScene(sceneToReload, LoadSceneMode.Single);
+        SceneManager.LoadScene((restartScene) ? sceneToReload : cutscene, LoadSceneMode.Single);
 
         timer = 0.0f;
 

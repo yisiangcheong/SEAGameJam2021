@@ -16,7 +16,7 @@ public class HealthBarMenu : MonoBehaviour
 
         if (hearts.Count == 0)
         {
-            FindObjectOfType<FadeController>().StartFade();
+            FindObjectOfType<FadeController>().StartFade(true);
         }
     }
 }

@@ -6,8 +6,9 @@ public class HenchmanController : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if(other.transform.CompareTag("Player"))
+        if (other.transform.CompareTag("Player"))
         {
+            FindObjectOfType<FadeController>().StartFade(false);
             Destroy(gameObject);
         }
     }
