@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
+    public static AudioManager Instance;
+
     [Header("Player SFX Events")]
     [FMODUnity.EventRef]
     public string PlayerHurtEvent = "";
@@ -30,6 +32,12 @@ public class AudioManager : MonoBehaviour
 
     [FMODUnity.EventRef]
     public string SussyBakaEvent = "";
+
+    private void Awake()
+    {
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
+    }
 
     public void PlaySFX(string targetEvent, GameObject targetGO)
     {

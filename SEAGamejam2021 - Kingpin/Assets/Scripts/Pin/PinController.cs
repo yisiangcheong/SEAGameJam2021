@@ -38,6 +38,8 @@ public class PinController : MonoBehaviour
     [SerializeField] float forwardJumpForce = 5.0f;
     [SerializeField] float upwardJumpForce = 10.0f;
 
+    [SerializeField] float minimumForceToDie = 10.0f;
+
     [Header("Preview Controls")]
     [SerializeField] bool selfInit = false;
     [SerializeField] float force = 10.0f;
@@ -249,7 +251,12 @@ public class PinController : MonoBehaviour
                     cascadeMultiplier = collision.transform.GetComponentInParent<PinController>().CascadeMultiplier - cascadeReduction;
 
                 hitEffectPooler.SpawnHitEffect(transform.position);
+                AudioManager.Instance.PlaySFX(AudioManager.Instance.PinHurtEvent, gameObject);
                 Die(collision.transform.GetComponent<Rigidbody>().velocity.magnitude * cascadeMultiplier, direction, true);
+
+                Debug.Log("PunchForce: " + collision.relativeVelocity.magnitude);
+
+                //if(collision.relativeVelocity.magnitude)
             }
         }
         else if (collision.transform.GetComponent< PlayerHandCollider>() != null && pinstate != PinState.Dead)

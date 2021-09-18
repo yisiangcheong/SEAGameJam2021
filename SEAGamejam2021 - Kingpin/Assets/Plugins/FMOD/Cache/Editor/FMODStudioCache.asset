@@ -22,6 +22,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-7372888997018835413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MultiplierSFX/MultiplierPitch
+  m_EditorClassIdentifier: 
+  Name: MultiplierPitch
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-6778268586491221414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,6 +300,28 @@ MonoBehaviour:
   - {fileID: 2859375612803411018}
   stringsBankWriteTime: 637676049548202267
   cacheVersion: 8
+--- !u!114 &1667762118074152833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MultiplierSFX/MultiplierPitch
+  m_EditorClassIdentifier: 
+  Name: MultiplierPitch
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &1761825788522060348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -298,6 +342,28 @@ MonoBehaviour:
   - Name: Desktop
     Value: 3745504
   Exists: 1
+--- !u!114 &1845760932495466538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MultiplierSFX/MultiplierPitch
+  m_EditorClassIdentifier: 
+  Name: MultiplierPitch
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &1915762854971869335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -429,6 +495,28 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1276
   Exists: 1
+--- !u!114 &3173154879306074336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MultiplierSFX/MultiplierPitch
+  m_EditorClassIdentifier: 
+  Name: MultiplierPitch
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &3189785435442804628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,6 +629,28 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 100
   Length: 1063
+--- !u!114 &5017621929970716400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MultiplierSFX/MultiplierPitch
+  m_EditorClassIdentifier: 
+  Name: MultiplierPitch
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &5997218823602233917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -628,7 +738,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 3251226818574441625}
+  - {fileID: -7372888997018835413}
   MinDistance: 0
   MaxDistance: 0
   Length: 130
