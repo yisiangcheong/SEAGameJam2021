@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1371378195978997762}
   - component: {fileID: 1371378195978997765}
   - component: {fileID: 1371378195978997764}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: LipTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -199,7 +199,7 @@ GameObject:
   - component: {fileID: 1371378196134977034}
   - component: {fileID: 1371378196134977037}
   - component: {fileID: 1371378196134977036}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: EyebrowLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -278,7 +278,7 @@ GameObject:
   - component: {fileID: 1371378196338102376}
   - component: {fileID: 1371378196338102379}
   - component: {fileID: 1371378196338102378}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: EyeRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -355,7 +355,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1371378196670293312}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Face
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -393,7 +393,7 @@ GameObject:
   - component: {fileID: 1371378197030118440}
   - component: {fileID: 1371378197030118443}
   - component: {fileID: 1371378197030118442}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: LipBottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -472,7 +472,7 @@ GameObject:
   - component: {fileID: 1371378197222258453}
   - component: {fileID: 1371378197222258456}
   - component: {fileID: 1371378197222258455}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: EyebrowLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -551,7 +551,7 @@ GameObject:
   - component: {fileID: 1371378197691894406}
   - component: {fileID: 1371378197691894409}
   - component: {fileID: 1371378197691894408}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: EyeLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -631,7 +631,7 @@ GameObject:
   - component: {fileID: 6798489786353734635}
   - component: {fileID: 5388797919270186897}
   - component: {fileID: 3148937753692838748}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: AttackCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
