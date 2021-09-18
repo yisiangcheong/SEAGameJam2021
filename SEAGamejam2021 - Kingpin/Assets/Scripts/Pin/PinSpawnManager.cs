@@ -76,6 +76,8 @@ public class PinSpawnManager : MonoBehaviour
                 viableSpawnPoints.Add(pinSpawnPoints[i]);
         }
 
+        if (viableSpawnPoints.Count == 0) return;
+
         int spawnCounter = 0;
         int patternSpawnTotal = Mathf.RoundToInt(Random.Range(spawnPattern[patternIndex].x, spawnPattern[patternIndex].y));
 
