@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - PinHazard
+  - Environment
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -16,10 +19,10 @@ TagManager:
   - Balls
   - BallSeparator
   - Ground
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - NonPlayerInteractable
+  - Decoration
+  - Enemy
   - 
   - 
   - 
