@@ -107,7 +107,7 @@ Transform:
   m_GameObject: {fileID: 1371378196099457163}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 4.5, y: 4.5, z: 4.5}
   m_Children:
   - {fileID: 2393117169182675760}
   m_Father: {fileID: 0}
@@ -148,11 +148,11 @@ MonoBehaviour:
   turnSpeed: 10
   moveSpeed: 10
   minHuntRange: 50
-  attackRange: 4
+  attackRange: 5
   attackDelay: 0.5
   leanForce: 0.1
-  forwardJumpForce: 6
-  upwardJumpForce: 6
+  forwardJumpForce: 7
+  upwardJumpForce: 7
   minimumForceToDie: 10
   selfInit: 0
   force: 10
