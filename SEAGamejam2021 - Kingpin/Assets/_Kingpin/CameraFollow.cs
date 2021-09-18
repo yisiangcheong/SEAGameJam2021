@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
+    [SerializeField] bool isEnabled = true;
     [SerializeField] Transform player = null;
     [SerializeField] Camera cam = null;
     [SerializeField] Transform focusPoint = null;
     [SerializeField] Vector3 focusPointOffset = Vector3.zero;
+    [SerializeField] float cameraDistance = 10f;
     [SerializeField] float xSensitivity = 1f;
     [SerializeField] float ySensitivity = 1f;
     [SerializeField] bool invertX = false;
@@ -22,10 +24,18 @@ public class CameraFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SetFocusPointPosition();
-        GetMouseMovement();
-        SetCameraPosition();
-        SetCameraRotation();
+        if(isEnabled)
+        {
+            SetFocusPointPosition();
+            GetMouseMovement();
+            SetCameraPosition();
+            SetCameraRotation();
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
+        
     }
 
     void GetMouseMovement()
@@ -33,7 +43,7 @@ public class CameraFollow : MonoBehaviour
         float mouseX = Input.GetAxis("Mouse X") * ySensitivity * (invertX ? -1 : 1);
         float mouseY = Input.GetAxis("Mouse Y") * xSensitivity * (invertY ? -1 : 1);
         float tempX = focusPoint.eulerAngles.x + -mouseY;
-        float tempY = focusPoint.eulerAngles.y + -mouseX;
+        float tempY = focusPoint.eulerAngles.y + mouseX;
         if(tempX <= 90f) tempX = Mathf.Clamp(tempX, -maxYAngle, maxYAngle);
         else tempX = Mathf.Clamp(tempX, 360 -maxYAngle, 360 + maxYAngle);//a negative x rotation in the editor is actually 180 > x > 360 internally
 
@@ -48,7 +58,7 @@ public class CameraFollow : MonoBehaviour
 
     void SetCameraPosition()
     {
-        cam.transform.position = focusPoint.position + (focusPoint.forward * -10);
+        cam.transform.position = focusPoint.position + (focusPoint.forward * -cameraDistance);
     }
 
     void SetCameraRotation()
