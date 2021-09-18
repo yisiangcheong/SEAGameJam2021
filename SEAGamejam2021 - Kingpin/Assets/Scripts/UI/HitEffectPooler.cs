@@ -6,6 +6,7 @@ public class HitEffectPooler : MonoBehaviour
 {
     [SerializeField] HitEffect effectPrefab = null;
     [SerializeField] int initialPoolSize = 20;
+    [SerializeField] float yOffset = 3.0f;
 
     [Header("Preview")]
     [SerializeField] List<HitEffect> poolList = new List<HitEffect>();
@@ -37,7 +38,7 @@ public class HitEffectPooler : MonoBehaviour
         {
             if (!poolList[i].gameObject.activeInHierarchy)
             {
-                poolList[i].Initialize(pos);
+                poolList[i].Initialize(new Vector3(pos.x, pos.y + yOffset, pos.z));
                 populateNewSlot = false;
                 break;
             }
@@ -51,6 +52,6 @@ public class HitEffectPooler : MonoBehaviour
 
         poolList.Add(newEffect);
 
-        newEffect.Initialize(pos);
+        newEffect.Initialize(new Vector3(pos.x, pos.y + yOffset, pos.z));
     }
 }
