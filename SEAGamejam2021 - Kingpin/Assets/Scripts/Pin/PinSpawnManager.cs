@@ -14,6 +14,10 @@ public class PinSpawnManager : MonoBehaviour
 
     [SerializeField] Vector3 spawnPointRadius = new Vector3(5.0f, 0.0f, 5.0f);
 
+    [Header("External References")]
+    [SerializeField] HitEffectPooler hitEffectPooler = null;
+    [SerializeField] MultiplierMenu multiplierMenu = null;
+
     Coroutine spawnRoutine = null;
 
     [Header("Preview")]
@@ -86,7 +90,7 @@ public class PinSpawnManager : MonoBehaviour
                                                         Random.Range(-spawnPointRadius.z, spawnPointRadius.z));
 
             newPin.transform.parent = transform;
-            newPin.GetComponent<PinController>().Initialize(this);
+            newPin.GetComponent<PinController>().Initialize(this, multiplierMenu, hitEffectPooler);
 
             pinPool.Add(newPin);
 
