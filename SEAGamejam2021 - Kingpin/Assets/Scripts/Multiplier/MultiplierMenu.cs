@@ -50,7 +50,7 @@ public class MultiplierMenu : MonoBehaviour
     {
         while (true)
         {
-            if ((Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1)) && isMultiplierUsable)
+            if ((Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1)) && isMultiplierUsable && totalHitCount > 0)
             {
                 isMultiplierUsable = false;
                 currentMultiplierPower = totalHitCount;

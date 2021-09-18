@@ -256,7 +256,7 @@ public class PinController : MonoBehaviour
             Vector3 direction = collision.transform.parent.position - transform.position;
             direction = -direction.normalized;
 
-            Die(collision.transform.GetComponent<Rigidbody>().velocity.magnitude * (MultiplierMenu.currentMultiplierPower / 100.0f + 100.0f), direction, true);
+            Die(collision.transform.GetComponent<Rigidbody>().velocity.magnitude * (MultiplierMenu.currentMultiplierPower / 10.0f + 1.0f), direction, true);
         }
     }
 }
