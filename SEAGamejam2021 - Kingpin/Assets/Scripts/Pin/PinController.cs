@@ -32,6 +32,7 @@ public class PinController : MonoBehaviour
     [SerializeField] float turnSpeed = 2.0f;
     [SerializeField] float moveSpeed = 5.0f;
     [SerializeField] float attackRange = 5.0f;
+    [SerializeField] float attackDelay = 0.5f;
     [SerializeField] float leanForce = 2.0f;
     [SerializeField] float forwardJumpForce = 5.0f;
     [SerializeField] float upwardJumpForce = 10.0f;
@@ -158,6 +159,14 @@ public class PinController : MonoBehaviour
             if (Vector3.Distance(transform.position, target.position) <= attackRange) break;
 
             yield return fixedUpdate;
+        }
+
+        float timer = 0.0f;
+
+        while (timer < attackDelay)
+        {
+            timer += Time.deltaTime;
+            yield return null;
         }
 
         BeginAttack();
