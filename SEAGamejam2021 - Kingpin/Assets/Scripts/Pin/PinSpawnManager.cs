@@ -20,7 +20,7 @@ public class PinSpawnManager : MonoBehaviour
     [SerializeField] Transform player = null;
     [SerializeField] List<GameObject> pinPool = new List<GameObject>();
 
-    List<Transform> viableSpawnPoints = new List<Transform>();
+    [SerializeField] List<Transform> viableSpawnPoints = new List<Transform>();
 
     private void OnEnable()
     {
@@ -59,7 +59,7 @@ public class PinSpawnManager : MonoBehaviour
         {
             for (int i = 0; i < pinSpawnPoints.Length; i++)
             {
-                if (Vector3.Distance(player.position, pinSpawnPoints[i].position) >= minSpawningRadius ||
+                if (Vector3.Distance(player.position, pinSpawnPoints[i].position) >= minSpawningRadius &&
                     Vector3.Distance(player.position, pinSpawnPoints[i].position) <= maxSpawningRadius)
                 {
                     viableSpawnPoints.Add(pinSpawnPoints[i]);

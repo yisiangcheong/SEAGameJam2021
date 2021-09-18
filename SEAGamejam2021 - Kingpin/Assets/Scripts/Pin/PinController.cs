@@ -31,6 +31,7 @@ public class PinController : MonoBehaviour
     [SerializeField] float deactivationDuration = 1.0f;
     [SerializeField] float turnSpeed = 2.0f;
     [SerializeField] float moveSpeed = 5.0f;
+    [SerializeField] float minHuntRange = 35.0f;
     [SerializeField] float attackRange = 5.0f;
     [SerializeField] float attackDelay = 0.5f;
     [SerializeField] float leanForce = 2.0f;
@@ -140,19 +141,16 @@ public class PinController : MonoBehaviour
 
         while (true)
         {
+            if (Vector3.Distance(target.position, transform.position) >= minHuntRange)
+            {
+                yield return null;
+                continue;
+            }
+
             targetDirection = target.position - transform.position;
             newDirection = Vector3.RotateTowards(transform.forward, targetDirection, turnSpeed * Time.deltaTime, 0.0f);
 
             transform.rotation = Quaternion.LookRotation(newDirection);
-
-            if (Physics.Raycast(transform.position, transform.forward, out RaycastHit objectHit, 10.0f))
-            {
-                if (objectHit.transform.CompareTag("Environment"))
-                {
-                    yield return fixedUpdate;
-                    continue;
-                }
-            }
 
             transform.position = transform.position + (transform.forward * (moveSpeed * Time.deltaTime));
 

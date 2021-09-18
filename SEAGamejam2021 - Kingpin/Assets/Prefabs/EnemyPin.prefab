@@ -145,8 +145,9 @@ MonoBehaviour:
   cascadeReduction: 0
   deactivationDelay: 10
   deactivationDuration: 1
-  turnSpeed: 2
-  moveSpeed: 3
+  turnSpeed: 10
+  moveSpeed: 10
+  minHuntRange: 50
   attackRange: 4
   attackDelay: 0.5
   leanForce: 0.1
