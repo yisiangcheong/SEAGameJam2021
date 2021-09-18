@@ -1,5 +1,31 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &983264920841939955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104001864657540207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd355df34ebf3d4ca19c7b1fab65aaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  launchBalls: {fileID: 4163013840220155216}
+--- !u!114 &7922070977314265843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4163013838872001988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd355df34ebf3d4ca19c7b1fab65aaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  launchBalls: {fileID: 4163013840220155216}
 --- !u!1 &4163013839659314545
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,6 +183,7 @@ MonoBehaviour:
   leftBallInitialLocalPosition: {x: 0, y: 0, z: 0}
   rightBallInitialLocalPosition: {x: 0, y: 0, z: 0}
   breakEarly: 0
+  isAttacking: 0
 --- !u!114 &4163013840220155219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,6 +246,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2098968122568095581}
     m_Modifications:
+    - target: {fileID: 243749938, guid: bc7721cc85e9cc349a63ea8d3651d4a7, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 243749940, guid: bc7721cc85e9cc349a63ea8d3651d4a7, type: 3}
       propertyPath: m_Spring
       value: 100
@@ -231,6 +262,11 @@ PrefabInstance:
     - target: {fileID: 860817074, guid: bc7721cc85e9cc349a63ea8d3651d4a7, type: 3}
       propertyPath: minVelocityForPound
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933838058047110553, guid: bc7721cc85e9cc349a63ea8d3651d4a7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3933838058047110554, guid: bc7721cc85e9cc349a63ea8d3651d4a7,
         type: 3}
@@ -321,9 +357,21 @@ Rigidbody:
     type: 3}
   m_PrefabInstance: {fileID: 4163013838981523958}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1104001864657540207 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3933838058047110553, guid: bc7721cc85e9cc349a63ea8d3651d4a7,
+    type: 3}
+  m_PrefabInstance: {fileID: 4163013838981523958}
+  m_PrefabAsset: {fileID: 0}
 --- !u!54 &1104001864657540205 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 3933838058047110555, guid: bc7721cc85e9cc349a63ea8d3651d4a7,
+    type: 3}
+  m_PrefabInstance: {fileID: 4163013838981523958}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4163013838872001988 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 243749938, guid: bc7721cc85e9cc349a63ea8d3651d4a7,
     type: 3}
   m_PrefabInstance: {fileID: 4163013838981523958}
   m_PrefabAsset: {fileID: 0}
