@@ -32,6 +32,8 @@ public class HitEffect : MonoBehaviour
 
         spriteRenderer.sprite = hitSprites[Random.Range(0, hitSprites.Length)];
 
+        gameObject.SetActive(true);
+
         if (faceCameraRoutine != null) StopCoroutine(faceCameraRoutine);
         faceCameraRoutine = StartCoroutine(FaceCameraRoutine());
 
