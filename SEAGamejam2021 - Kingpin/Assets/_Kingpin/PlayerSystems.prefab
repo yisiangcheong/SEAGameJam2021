@@ -242,6 +242,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Capsule
       objectReference: {fileID: 0}
+    - target: {fileID: 3933838059351724801, guid: bc7721cc85e9cc349a63ea8d3651d4a7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 3933838059351724802, guid: bc7721cc85e9cc349a63ea8d3651d4a7,
         type: 3}
       propertyPath: m_CollisionDetection
