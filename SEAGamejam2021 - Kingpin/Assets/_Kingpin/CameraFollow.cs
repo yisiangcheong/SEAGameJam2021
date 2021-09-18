@@ -59,7 +59,29 @@ public class CameraFollow : MonoBehaviour
 
     void SetCameraPosition()
     {
-        cam.transform.position = focusPoint.position + (focusPoint.forward * -cameraDistance);
+        float finalCameraDistance = cameraDistance;
+        RaycastHit hit;
+        int layermask1 = 1 << LayerMask.NameToLayer("Player");
+        int layermask2 = 1 << LayerMask.NameToLayer("NonPlayerInteractable");
+        int layermask3 = 1 << LayerMask.NameToLayer("Balls");
+        int layermask4 = 1 << LayerMask.NameToLayer("Enemy");
+        int layermask5 = 1 << LayerMask.NameToLayer("Decoration");
+        int layermask6 = 1 << LayerMask.NameToLayer("Attack");
+        int finalmask  = layermask1 | layermask2 | layermask3 | layermask4 | layermask5 | layermask6;
+        finalmask = ~finalmask;
+        //int layermask2 = LayerMask.NameToLayer("Player");
+        if (Physics.Raycast(focusPoint.position, -focusPoint.forward, out hit, cameraDistance, finalmask))
+        {
+            Debug.DrawRay(focusPoint.position, -focusPoint.forward * cameraDistance, Color.yellow);
+            finalCameraDistance = hit.distance;
+        }
+        else
+        {
+            Debug.DrawRay(focusPoint.position, -focusPoint.forward * cameraDistance, Color.red);
+        }
+
+
+        cam.transform.position = focusPoint.position + (focusPoint.forward * -finalCameraDistance);
     }
 
     void SetCameraRotation()

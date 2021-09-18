@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1371378195978997762}
   - component: {fileID: 1371378195978997765}
   - component: {fileID: 1371378195978997764}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: LipTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ Transform:
   m_GameObject: {fileID: 1371378196099457163}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 4.5, y: 4.5, z: 4.5}
   m_Children:
   - {fileID: 2393117169182675760}
   m_Father: {fileID: 0}
@@ -148,11 +148,12 @@ MonoBehaviour:
   turnSpeed: 10
   moveSpeed: 10
   minHuntRange: 50
-  attackRange: 4
+  attackRange: 5
   attackDelay: 0.5
   leanForce: 0.1
-  forwardJumpForce: 6
-  upwardJumpForce: 6
+  forwardJumpForce: 7
+  upwardJumpForce: 7
+  minimumForceToDie: 10
   selfInit: 0
   force: 10
   explodeForward: 0
@@ -198,7 +199,7 @@ GameObject:
   - component: {fileID: 1371378196134977034}
   - component: {fileID: 1371378196134977037}
   - component: {fileID: 1371378196134977036}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: EyebrowLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -277,7 +278,7 @@ GameObject:
   - component: {fileID: 1371378196338102376}
   - component: {fileID: 1371378196338102379}
   - component: {fileID: 1371378196338102378}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: EyeRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -354,7 +355,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1371378196670293312}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Face
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -392,7 +393,7 @@ GameObject:
   - component: {fileID: 1371378197030118440}
   - component: {fileID: 1371378197030118443}
   - component: {fileID: 1371378197030118442}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: LipBottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -471,7 +472,7 @@ GameObject:
   - component: {fileID: 1371378197222258453}
   - component: {fileID: 1371378197222258456}
   - component: {fileID: 1371378197222258455}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: EyebrowLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -550,7 +551,7 @@ GameObject:
   - component: {fileID: 1371378197691894406}
   - component: {fileID: 1371378197691894409}
   - component: {fileID: 1371378197691894408}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: EyeLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -630,7 +631,7 @@ GameObject:
   - component: {fileID: 6798489786353734635}
   - component: {fileID: 5388797919270186897}
   - component: {fileID: 3148937753692838748}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: AttackCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -791,7 +792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3f42cd379f354e4c99c373edc899614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  decorationDelay: 0.65
+  decorationDelay: 0.6
   decorationLayer: 13
 --- !u!64 &4095845824123593458
 MeshCollider:

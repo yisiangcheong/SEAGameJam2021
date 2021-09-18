@@ -6,7 +6,7 @@ using Ludus.Math;
 
 public class MultiplierMenu : MonoBehaviour
 {
-    [SerializeField] Text multiplierLabel = null;
+    [SerializeField] Text[] multiplierLabels = null;
 
     [Header("Settings")]
     [SerializeField] float enlargeDuration = 0.1f;
@@ -70,7 +70,8 @@ public class MultiplierMenu : MonoBehaviour
     {
         totalHitCount += 1;
 
-        multiplierLabel.text = (totalHitCount == 1) ? $"x{totalHitCount} Pin" : $"x{totalHitCount} Pins";
+        for (int i = 0; i < multiplierLabels.Length; i++)
+            multiplierLabels[i].text = (totalHitCount == 1) ? $"<size=65>x </size><size=130>{totalHitCount}</size>Pin" : $"<size=65>x </size><size=130>{totalHitCount}</size>Pins";
 
         if (!isIdle) StartBounceLabel(true);
         else BounceLabel(true);
@@ -100,11 +101,11 @@ public class MultiplierMenu : MonoBehaviour
     {
         float timer = 0.0f;
 
-        Vector3 startScale = (startFromZero) ? Vector3.zero : multiplierLabel.transform.localScale;
+        Vector3 startScale = (startFromZero) ? Vector3.zero : multiplierLabels[0].transform.localScale;
 
         while (timer < enlargeDuration)
         {
-            multiplierLabel.transform.localScale = Vector3.Lerp(startScale, enlargedScale, Easing.EaseInCubic(timer / enlargeDuration));
+            multiplierLabels[0].transform.localScale = Vector3.Lerp(startScale, enlargedScale, Easing.EaseInCubic(timer / enlargeDuration));
 
             timer += Time.deltaTime;
             yield return null;
@@ -114,7 +115,7 @@ public class MultiplierMenu : MonoBehaviour
 
         while (timer < settleDuration)
         {
-            multiplierLabel.transform.localScale = Vector3.Lerp(enlargedScale, settleScale, Easing.EaseInCubic(timer / settleDuration));
+            multiplierLabels[0].transform.localScale = Vector3.Lerp(enlargedScale, settleScale, Easing.EaseInCubic(timer / settleDuration));
 
             timer += Time.deltaTime;
             yield return null;
@@ -126,7 +127,7 @@ public class MultiplierMenu : MonoBehaviour
 
         while (timer < regularDuration)
         {
-            multiplierLabel.transform.localScale = Vector3.Lerp(settleScale, regularScale, Easing.EaseInCubic(timer / regularDuration));
+            multiplierLabels[0].transform.localScale = Vector3.Lerp(settleScale, regularScale, Easing.EaseInCubic(timer / regularDuration));
 
             timer += Time.deltaTime;
             yield return null;
@@ -147,7 +148,8 @@ public class MultiplierMenu : MonoBehaviour
                 if (timer < regularDuration)
                 {
                     timer += Time.deltaTime;
-                    multiplierLabel.transform.localScale = Vector3.Lerp(shrinkScale, regularScale, Easing.EaseInCubic(timer / regularDuration));
+
+                    multiplierLabels[0].transform.localScale = Vector3.Lerp(shrinkScale, regularScale, Easing.EaseInCubic(timer / regularDuration));
                 }
                 else
                 {
@@ -160,7 +162,8 @@ public class MultiplierMenu : MonoBehaviour
                 if (timer < shrinkDuration)
                 {
                     timer += Time.deltaTime;
-                    multiplierLabel.transform.localScale = Vector3.Lerp(regularScale, shrinkScale, Easing.EaseInCubic(timer / shrinkDuration));
+
+                    multiplierLabels[0].transform.localScale = Vector3.Lerp(regularScale, shrinkScale, Easing.EaseInCubic(timer / shrinkDuration));
                 }
                 else
                 {
@@ -176,11 +179,11 @@ public class MultiplierMenu : MonoBehaviour
     IEnumerator ShrinkRoutine()
     {
         float timer = 0.0f;
-        Vector3 startScale = multiplierLabel.transform.localScale;
+        Vector3 startScale = multiplierLabels[0].transform.localScale;
 
         while (timer < disappearPrepDuration)
         {
-            multiplierLabel.transform.localScale = Vector3.Lerp(startScale, disappearPrepScale, Easing.EaseInCubic(timer / disappearPrepDuration));
+            multiplierLabels[0].transform.localScale = Vector3.Lerp(startScale, disappearPrepScale, Easing.EaseInCubic(timer / disappearPrepDuration));
 
             timer += Time.deltaTime;
             yield return null;
@@ -198,12 +201,12 @@ public class MultiplierMenu : MonoBehaviour
 
         while (timer < disappearDuration)
         {
-            multiplierLabel.transform.localScale = Vector3.Lerp(disappearPrepScale, Vector3.zero, Easing.EaseInCubic(timer / disappearDuration));
+            multiplierLabels[0].transform.localScale = Vector3.Lerp(disappearPrepScale, Vector3.zero, Easing.EaseInCubic(timer / disappearDuration));
 
             timer += Time.deltaTime;
             yield return null;
         }
 
-        multiplierLabel.transform.localScale = Vector3.zero;
+        multiplierLabels[0].transform.localScale = Vector3.zero;
     }
 }

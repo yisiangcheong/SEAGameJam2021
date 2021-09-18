@@ -5,7 +5,7 @@
 			<value>BowlingStrike</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{6e290de2-9a72-4844-ad2d-8152e3ee20a3}</destination>
@@ -113,7 +113,6 @@
 	<object class="MixerBusEffectChain" id="{14bc3043-890d-4446-98d6-efc6f2e1d091}">
 		<relationship name="effects">
 			<destination>{fd5f14e2-6039-42f1-a425-0e243780fb26}</destination>
-			<destination>{b638e957-0c88-49e9-9699-a35507aab557}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{f81d6b14-884d-48b3-b571-d278bd2ff778}" />
@@ -125,6 +124,5 @@
 	</object>
 	<object class="MixerBusPanner" id="{b021cb2c-c807-426a-bf49-b88fd5a09a8a}" />
 	<object class="MixerBusFader" id="{fd5f14e2-6039-42f1-a425-0e243780fb26}" />
-	<object class="SpatialiserEffect" id="{b638e957-0c88-49e9-9699-a35507aab557}" />
 	<object class="MixerBusFader" id="{30ff9a46-209b-449d-917d-08e0861ccd3f}" />
 </objects>

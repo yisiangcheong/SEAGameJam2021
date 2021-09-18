@@ -14,21 +14,25 @@ public class LaunchBalls : MonoBehaviour
     [SerializeField] float forceChargeRate = 1f;
     [SerializeField] float forceMultiplier = 1f;
     float currentForce = 0f;
-    [SerializeField] float ballMaxDistance = 5f;
     [SerializeField] bool rightHandMode = false;
     [SerializeField] float kinematicFreezeDuration = 1.0f;
-    [SerializeField] bool leftBallWasKinematic = true;
-    [SerializeField] bool rightBallWasKinematic = true;
-    [SerializeField] Vector3 leftBallPosition = Vector3.zero;
-    [SerializeField] Vector3 rightBallPosition = Vector3.zero;
-    [SerializeField] Vector3 leftBallInitialLocalPosition = Vector3.zero;
-    [SerializeField] Vector3 rightBallInitialLocalPosition = Vector3.zero;
+    [SerializeField] float ballMaxDistance = 5f;
+    bool leftBallWasKinematic = true;
+    bool rightBallWasKinematic = true;
+    Vector3 leftBallPosition = Vector3.zero;
+    Vector3 rightBallPosition = Vector3.zero;
+    Vector3 leftBallInitialLocalPosition = Vector3.zero;
+    Vector3 rightBallInitialLocalPosition = Vector3.zero;
     public bool breakEarly = false;
     public bool isAttacking = false;
+    public bool canGroundPound = false;
+    int layerMask = 0;
+    [SerializeField] float groundPoundMinHeight = 1f;
 
     // Start is called before the first frame update
     void Start()
     {
+        layerMask = 1 << LayerMask.NameToLayer("Ground");
         ResetForce();//set the launcher force to min value at start
 
         //remember local positions of balls for ResetBallPositions
@@ -39,6 +43,19 @@ public class LaunchBalls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        RaycastHit hit;
+        if (Physics.Raycast(player.position, Vector3.down, out hit, groundPoundMinHeight, layerMask))
+        {
+            Debug.DrawRay(player.position, Vector3.down * groundPoundMinHeight, Color.yellow);
+            canGroundPound = false;
+        }
+        else
+        {
+            Debug.DrawRay(player.position, Vector3.down * groundPoundMinHeight, Color.red);
+            canGroundPound = true;
+        }
+       
+
         if (Input.GetMouseButton(0))
         {
             ChargeForce();
@@ -50,17 +67,23 @@ public class LaunchBalls : MonoBehaviour
             ResetBallPosition();//brings the ball back to the player's side before launching it again
             if (rightHandMode)
             {
+                leftBallWasKinematic = true;
                 LaunchBall(rightBall, currentForce);
                 StartCoroutine(SetKinematicBoolsRoutine(0.0f));
                 rightHandMode = false;//swaps hand to launch
             }
             else
             {
+                rightBallWasKinematic = true;
                 LaunchBall(leftBall, currentForce);
                 StartCoroutine(SetKinematicBoolsRoutine(0.0f));
                 rightHandMode = true;//swaps hand to launch
             }
             ResetForce();
+        }
+        if(Input.GetMouseButtonDown(1))
+        {
+
         }
         //SetKinematic();
         CheckIsAttacking();
@@ -78,6 +101,8 @@ public class LaunchBalls : MonoBehaviour
     void LaunchBall(Rigidbody ball, float force)
     {
         ball.AddForce(cameraFocus.forward * force * forceMultiplier, ForceMode.Impulse);//apply final charged force to the ball, multiplied by forceMultiplier
+
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.PlayerPunchEvent, ball.gameObject);
     }
 
     void ChargeForce()
@@ -97,18 +122,20 @@ public class LaunchBalls : MonoBehaviour
         //if true, set the ball's position back to last frame's position and set kinematic
         if (!leftBallWasKinematic)
         {
-            if (Vector3.Distance(player.position, leftBallPosition) > Vector3.Distance(player.position, leftBall.transform.position))
+            if (Vector3.Distance(player.position, leftBall.transform.position) > ballMaxDistance)
             {
-                leftBall.transform.position = leftBallPosition;
+                print("Left hand lock triggered");
+                //leftBall.transform.position = leftBallPosition;
                 StartCoroutine(SetKinematicRoutine(leftBall));
                 leftBallWasKinematic = true;
             }
         }
         if (!rightBallWasKinematic)
         {
-            if (Vector3.Distance(player.position, rightBallPosition) > Vector3.Distance(player.position, rightBall.transform.position))
+            if (Vector3.Distance(player.position, rightBall.transform.position) > ballMaxDistance)
             {
-                rightBall.transform.position = rightBallPosition;
+                print("Right hand lock triggered");
+                //rightBall.transform.position = rightBallPosition;
                 StartCoroutine(SetKinematicRoutine(rightBall));
                 rightBallWasKinematic = true;
             }
@@ -137,10 +164,12 @@ public class LaunchBalls : MonoBehaviour
     IEnumerator SetKinematicRoutine(Rigidbody ball)
     {
         //remember velocities of the relevant rigidbodies
+        playerRigidbody.transform.eulerAngles = new Vector3(0, cameraFocus.eulerAngles.y, 0);
         Vector3 ballVelocity = ball.velocity;
         Vector3 playerVelocity = playerRigidbody.velocity;
         //set isKinematic
         ball.isKinematic = true;
+        //leftBall.isKinematic
         playerRigidbody.isKinematic = true;
         //initialize timer
         float timer = 0;
@@ -148,8 +177,8 @@ public class LaunchBalls : MonoBehaviour
         {
             timer += Time.deltaTime;
             //simulates movement for the rigidbodies
-            ball.MovePosition(ball.transform.position + (playerVelocity * Time.deltaTime));
-            playerRigidbody.MovePosition(playerRigidbody.transform.position + (playerVelocity * Time.deltaTime));
+            ball.MovePosition(ball.transform.position + (ballVelocity * Time.deltaTime));
+            playerRigidbody.MovePosition(playerRigidbody.transform.position + (ballVelocity * Time.deltaTime));
             yield return null;
         }
         breakEarly = false;
@@ -157,8 +186,8 @@ public class LaunchBalls : MonoBehaviour
         ball.isKinematic = false;   
         playerRigidbody.isKinematic = false;
         //return their original velocities, except ball velocity was too high most times so I opted to use player's velocity so they move in the same direction at the same speed
-        ball.velocity = playerVelocity;
-        playerRigidbody.velocity = playerVelocity;
+        ball.velocity = ballVelocity;
+        playerRigidbody.velocity = ballVelocity;
         yield break;
     }
 
@@ -173,8 +202,8 @@ public class LaunchBalls : MonoBehaviour
     IEnumerator SetKinematicBoolsRoutine(float delay)
     {
         //delays the setting of the kinematic bools so that the current position of the balls has time to save in the update loop
-        yield return new WaitForSeconds(delay);
-        if(rightHandMode) leftBallWasKinematic = false;
+        //yield return new WaitForSeconds(delay);
+        if(!rightHandMode) leftBallWasKinematic = false;
         else rightBallWasKinematic = false;
         yield break;
     }
@@ -202,4 +231,6 @@ public class LaunchBalls : MonoBehaviour
             leftBallPosition = leftBall.transform.position;
         }
     }
+
+    
 }

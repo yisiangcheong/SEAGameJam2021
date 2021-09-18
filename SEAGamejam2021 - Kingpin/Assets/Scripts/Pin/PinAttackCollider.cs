@@ -35,7 +35,7 @@ public class PinAttackCollider : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.CompareTag("PinHazard") && pinController.pinstate != PinState.Dead)
+        if (collision.transform.CompareTag("Player") && pinController.pinstate != PinState.Dead)
         {
             if (collision.transform.GetComponent<Rigidbody>() != null)
             {
@@ -44,7 +44,11 @@ public class PinAttackCollider : MonoBehaviour
                 Vector3 direction = collision.transform.parent.position - transform.position;
                 direction = -direction.normalized;
 
-                pinController.Die(collision.transform.GetComponent<Rigidbody>().velocity.magnitude * pinController.CascadeMultiplier, direction, true);
+                FindObjectOfType<HealthBarMenu>().ReduceHeart();
+
+                AudioManager.Instance.PlaySFX(AudioManager.Instance.PlayerHurtEvent, gameObject);
+
+                pinController.Die(collision.transform.GetComponent<Rigidbody>().velocity.magnitude * pinController.CascadeMultiplier, direction, false, true);
             }
         }
     }

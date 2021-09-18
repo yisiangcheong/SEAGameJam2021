@@ -7,6 +7,7 @@ TagManager:
   - PinHazard
   - Environment
   - Ground
+  - Target
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - NonPlayerInteractable
   - Decoration
   - Enemy
-  - 
+  - Attack
   - 
   - 
   - 

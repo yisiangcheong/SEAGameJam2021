@@ -38,6 +38,11 @@ public class PinController : MonoBehaviour
     [SerializeField] float forwardJumpForce = 5.0f;
     [SerializeField] float upwardJumpForce = 10.0f;
 
+    [SerializeField] float minimumForceToDie = 10.0f;
+
+    //if TotalHitCount % bowlingStrikeAmount == 0, play the strike SFX
+    [SerializeField] int bowlingStrikeAmount = 10;
+
     [Header("Preview Controls")]
     [SerializeField] bool selfInit = false;
     [SerializeField] float force = 10.0f;
@@ -54,6 +59,8 @@ public class PinController : MonoBehaviour
 
     WaitForFixedUpdate fixedUpdate = new WaitForFixedUpdate();
 
+    HitEffectPooler hitEffectPooler = null;
+    MultiplierMenu multiplierMenu = null;
     PinSpawnManager spawnManager = null;
 
     private void OnEnable()
@@ -79,9 +86,11 @@ public class PinController : MonoBehaviour
         }
     }
 
-    public void Initialize(PinSpawnManager spawnManager)
+    public void Initialize(PinSpawnManager spawnManager, MultiplierMenu multiplierMenu, HitEffectPooler hitEffectPooler)
     {
         this.spawnManager = spawnManager;
+        this.multiplierMenu = multiplierMenu;
+        this.hitEffectPooler = hitEffectPooler;
         Initialize();
     }
 
@@ -90,7 +99,15 @@ public class PinController : MonoBehaviour
         pinstate = PinState.Dead;
         StopAllCoroutines();
 
-        if (addToScore) FindObjectOfType<MultiplierMenu>().AddScore();
+        if (addToScore)
+        {
+            multiplierMenu.AddScore();
+
+            if(multiplierMenu.totalHitCount%bowlingStrikeAmount == 0)
+            {
+                AudioManager.Instance.PlaySFX(AudioManager.Instance.PinBowlingStrikeEvent, gameObject);
+            }
+        }
         if (instantDecoration) pinModelCollider.TurnIntoDecoration();
 
         movementBody.isKinematic = true;
@@ -187,6 +204,8 @@ public class PinController : MonoBehaviour
         attackBody.AddForce(transform.forward * forwardJumpForce + transform.up * upwardJumpForce, ForceMode.Impulse);
 
         pinAttackCollider.StartAttackDeactivation();
+
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.PinAttackEvent, gameObject);
     }
 
     void SetMaterialRenderersToFade()
@@ -246,7 +265,13 @@ public class PinController : MonoBehaviour
                 if (collision.transform.GetComponentInParent<PinController>() != null)
                     cascadeMultiplier = collision.transform.GetComponentInParent<PinController>().CascadeMultiplier - cascadeReduction;
 
+                hitEffectPooler.SpawnHitEffect(transform.position);
+                AudioManager.Instance.PlaySFX(AudioManager.Instance.PinHurtEvent, gameObject);
                 Die(collision.transform.GetComponent<Rigidbody>().velocity.magnitude * cascadeMultiplier, direction, true);
+
+                Debug.Log("PunchForce: " + collision.relativeVelocity.magnitude);
+
+                //if(collision.relativeVelocity.magnitude)
             }
         }
         else if (collision.transform.GetComponent< PlayerHandCollider>() != null && pinstate != PinState.Dead)
@@ -254,6 +279,8 @@ public class PinController : MonoBehaviour
             Vector3 direction = collision.transform.parent.position - transform.position;
             direction = -direction.normalized;
 
+            hitEffectPooler.SpawnHitEffect(transform.position);
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.PinHurtEvent, gameObject);
             Die(collision.transform.GetComponent<Rigidbody>().velocity.magnitude * (MultiplierMenu.currentMultiplierPower / 10.0f + 1.0f), direction, true);
         }
     }
