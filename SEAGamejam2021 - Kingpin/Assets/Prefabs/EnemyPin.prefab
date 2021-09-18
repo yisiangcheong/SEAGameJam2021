@@ -153,6 +153,7 @@ MonoBehaviour:
   leanForce: 0.1
   forwardJumpForce: 6
   upwardJumpForce: 6
+  minimumForceToDie: 10
   selfInit: 0
   force: 10
   explodeForward: 0
@@ -791,7 +792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3f42cd379f354e4c99c373edc899614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  decorationDelay: 0.65
+  decorationDelay: 0.6
   decorationLayer: 13
 --- !u!64 &4095845824123593458
 MeshCollider:
