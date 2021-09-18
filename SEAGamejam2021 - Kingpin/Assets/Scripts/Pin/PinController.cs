@@ -17,13 +17,14 @@ public class PinController : MonoBehaviour
     [SerializeField] Rigidbody attackBody = null;
     [SerializeField] CapsuleCollider attackColl = null;
     [SerializeField] Rigidbody meshBody = null;
-    [SerializeField] CapsuleCollider meshColl = null;
+    [SerializeField] MeshCollider meshColl = null;
     [SerializeField] MeshRenderer[] meshRenderers = null;
     [SerializeField] PinAttackCollider pinAttackCollider = null;
     [SerializeField] PinModelCollider pinModelCollider = null;
 
     [Header("Settings")]
     [SerializeField] float cascadeMultiplier = 1.5f;
+    [SerializeField] float cascadeReduction = 0.01f;
     public float CascadeMultiplier { get { return cascadeMultiplier; } }
 
     [SerializeField] float deactivationDelay = 10.0f;
@@ -31,7 +32,7 @@ public class PinController : MonoBehaviour
     [SerializeField] float turnSpeed = 2.0f;
     [SerializeField] float moveSpeed = 5.0f;
     [SerializeField] float attackRange = 5.0f;
-    [SerializeField] Vector3 leanForce = new Vector3(5.0f, 0.0f, 0.0f);
+    [SerializeField] float leanForce = 2.0f;
     [SerializeField] float forwardJumpForce = 5.0f;
     [SerializeField] float upwardJumpForce = 10.0f;
 
@@ -175,7 +176,7 @@ public class PinController : MonoBehaviour
         attackBody.isKinematic = false;
         attackBody.useGravity = true;
 
-        attackBody.AddTorque(leanForce, ForceMode.Impulse);
+        attackBody.AddTorque(transform.right * leanForce, ForceMode.Impulse);
         attackBody.AddForce(transform.forward * forwardJumpForce + transform.up * upwardJumpForce, ForceMode.Impulse);
 
         pinAttackCollider.StartAttackDeactivation();
@@ -234,6 +235,9 @@ public class PinController : MonoBehaviour
             {
                 Vector3 direction = collision.transform.parent.position - transform.position;
                 direction = -direction.normalized;
+
+                if (collision.transform.GetComponentInParent<PinController>() != null)
+                    cascadeMultiplier = collision.transform.GetComponentInParent<PinController>().CascadeMultiplier - cascadeReduction;
 
                 Die(collision.transform.GetComponent<Rigidbody>().velocity.magnitude * cascadeMultiplier, direction, true);
             }
