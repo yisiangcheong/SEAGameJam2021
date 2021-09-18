@@ -86,6 +86,8 @@ public class PinController : MonoBehaviour
     public void Initialize(PinSpawnManager spawnManager, MultiplierMenu multiplierMenu, HitEffectPooler hitEffectPooler)
     {
         this.spawnManager = spawnManager;
+        this.multiplierMenu = multiplierMenu;
+        this.hitEffectPooler = hitEffectPooler;
         Initialize();
     }
 
@@ -191,6 +193,8 @@ public class PinController : MonoBehaviour
         attackBody.AddForce(transform.forward * forwardJumpForce + transform.up * upwardJumpForce, ForceMode.Impulse);
 
         pinAttackCollider.StartAttackDeactivation();
+
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.PinAttackEvent, gameObject);
     }
 
     void SetMaterialRenderersToFade()
