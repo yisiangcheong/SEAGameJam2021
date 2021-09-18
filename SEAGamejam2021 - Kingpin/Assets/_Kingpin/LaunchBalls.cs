@@ -24,6 +24,7 @@ public class LaunchBalls : MonoBehaviour
     [SerializeField] Vector3 leftBallInitialLocalPosition = Vector3.zero;
     [SerializeField] Vector3 rightBallInitialLocalPosition = Vector3.zero;
     public bool breakEarly = false;
+    public bool isAttacking = false;
 
     // Start is called before the first frame update
     void Start()
@@ -44,6 +45,7 @@ public class LaunchBalls : MonoBehaviour
         }
         if (Input.GetMouseButtonUp(0))
         {
+            isAttacking = true;
             ResetAllVelocities();//makes the player feel more in control of their movement
             ResetBallPosition();//brings the ball back to the player's side before launching it again
             if (rightHandMode)
@@ -61,8 +63,9 @@ public class LaunchBalls : MonoBehaviour
             ResetForce();
         }
         //SetKinematic();
-        //leftBallPosition = leftBall.transform.position;//remembers current ball position to compare to next frame
-        //rightBallPosition = rightBall.transform.position;//remembers current ball position to compare to next frame
+        CheckIsAttacking();
+        leftBallPosition = leftBall.transform.position;//remembers current ball position to compare to next frame
+        rightBallPosition = rightBall.transform.position;//remembers current ball position to compare to next frame
     }
 
     private void LateUpdate()
@@ -101,7 +104,7 @@ public class LaunchBalls : MonoBehaviour
                 leftBallWasKinematic = true;
             }
         }
-        if(!rightBallWasKinematic)
+        if (!rightBallWasKinematic)
         {
             if (Vector3.Distance(player.position, rightBallPosition) > Vector3.Distance(player.position, rightBall.transform.position))
             {
@@ -111,6 +114,25 @@ public class LaunchBalls : MonoBehaviour
             }
         }
     }
+
+    void CheckIsAttacking()
+    {
+        if (rightHandMode)
+        {
+            if (Vector3.Distance(player.position, leftBallPosition) > Vector3.Distance(player.position, leftBall.transform.position))
+            {
+                isAttacking = false;
+            }
+        }
+        else
+        {
+            if (Vector3.Distance(player.position, rightBallPosition) > Vector3.Distance(player.position, rightBall.transform.position))
+            {
+                isAttacking = false;
+            }
+        }
+    }
+
 
     IEnumerator SetKinematicRoutine(Rigidbody ball)
     {
