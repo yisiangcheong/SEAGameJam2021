@@ -25,15 +25,45 @@ public class MultiplierMenu : MonoBehaviour
     [SerializeField] float disappearDuration = 0.1f;
 
     public bool isIdle { get; private set; } = false;
+    public bool isMultiplierUsable { get; private set; } = false;
     public int totalHitCount { get; private set; } = 0;
+    public static int currentMultiplierPower { get; private set; } = 0;
 
     Coroutine actionRoutine = null;
+    Coroutine checkInputRoutine = null;
 
     private void OnEnable()
     {
         //multiplierLabel.text = "";
 
-        Invoke("ShrinkLabel", 10.0f);
+        totalHitCount = 0;
+        currentMultiplierPower = 0;
+
+        isMultiplierUsable = false;
+        isIdle = false;
+
+        if (checkInputRoutine != null) StopCoroutine(checkInputRoutine);
+        checkInputRoutine = StartCoroutine(CheckInputRoutine());
+    }
+
+    IEnumerator CheckInputRoutine()
+    {
+        while (true)
+        {
+            if ((Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1)) && isMultiplierUsable)
+            {
+                isMultiplierUsable = false;
+                currentMultiplierPower = totalHitCount;
+
+                ShrinkLabel();
+            }
+            else if ((Input.GetMouseButtonUp(0) || Input.GetMouseButtonUp(1)) && !isMultiplierUsable)
+            {
+                isMultiplierUsable = true;
+            }
+
+            yield return null;
+        }
     }
 
     public void AddScore()
