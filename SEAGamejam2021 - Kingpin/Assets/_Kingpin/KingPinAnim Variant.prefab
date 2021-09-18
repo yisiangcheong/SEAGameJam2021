@@ -196,7 +196,8 @@ GameObject:
   - component: {fileID: 1437370658375331381}
   - component: {fileID: 1437370658375331379}
   - component: {fileID: 1437370658375331382}
-  m_Layer: 0
+  - component: {fileID: 6396768312607993286}
+  m_Layer: 8
   m_Name: BowlingBall_Hand_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -330,6 +331,19 @@ SpringJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &6396768312607993286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8074764895757161492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd355df34ebf3d4ca19c7b1fab65aaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  launchBalls: {fileID: 1437370659560581887}
 --- !u!1 &8074764896295862839
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,7 +359,8 @@ GameObject:
   - component: {fileID: 1437370658926622740}
   - component: {fileID: 1437370658926622738}
   - component: {fileID: 1437370658926622741}
-  m_Layer: 0
+  - component: {fileID: 7410923401559422747}
+  m_Layer: 8
   m_Name: BowlingBall_Hand_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -480,6 +495,19 @@ SpringJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &7410923401559422747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8074764896295862839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd355df34ebf3d4ca19c7b1fab65aaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  launchBalls: {fileID: 1437370659560581887}
 --- !u!1 &8074764897005392000
 GameObject:
   m_ObjectHideFlags: 0
@@ -1220,9 +1248,9 @@ GameObject:
   - component: {fileID: 1437370659560581883}
   - component: {fileID: 1437370659560581879}
   - component: {fileID: 1437370659560581887}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RigRoot
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
