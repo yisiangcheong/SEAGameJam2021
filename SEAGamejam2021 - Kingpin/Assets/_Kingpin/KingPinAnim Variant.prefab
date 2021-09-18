@@ -88,6 +88,15 @@ MonoBehaviour:
   invertX: 0
   invertY: 0
   maxYAngle: 70
+  startCamShake: 0
+  camShakeDuration: 0.2
+  amplitude: 1.5
+  frequency: 0.99999
+  octaves: 4
+  persistance: 0.08
+  lacunarity: 66.6
+  burstFrequency: 0.99999
+  burstContrast: 2
 --- !u!1 &7244182487828738681
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,7 +327,7 @@ SpringJoint:
   m_ConnectedBody: {fileID: 1437370659560581877}
   m_Anchor: {x: 0, y: 0.18578452, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 89.99999, y: 154.57846, z: -3.600006}
+  m_ConnectedAnchor: {x: 89.99999, y: 173.1569, z: -3.5999985}
   serializedVersion: 2
   m_Spring: 100
   m_Damper: 1
@@ -482,7 +491,7 @@ SpringJoint:
   m_ConnectedBody: {fileID: 1437370659560581877}
   m_Anchor: {x: 0, y: 0.18578452, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -89.89999, y: 154.57846, z: -3.600006}
+  m_ConnectedAnchor: {x: -89.89999, y: 173.15692, z: -3.5999985}
   serializedVersion: 2
   m_Spring: 100
   m_Damper: 1
