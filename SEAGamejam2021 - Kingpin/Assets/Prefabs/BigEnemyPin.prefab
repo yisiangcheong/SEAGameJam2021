@@ -877,3 +877,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pinController: {fileID: 2628699267824954961}
   anim: {fileID: 5009160286587765106}
+  shakeDuration: 0.2
