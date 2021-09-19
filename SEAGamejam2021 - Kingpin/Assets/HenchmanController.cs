@@ -8,6 +8,7 @@ public class HenchmanController : MonoBehaviour
     {
         if (other.transform.CompareTag("Player"))
         {
+            AudioManager.Instance.Play2DSFX(AudioManager.Instance.SussyBakaEvent);
             FindObjectOfType<FadeController>().StartFade(false);
             Destroy(gameObject);
         }

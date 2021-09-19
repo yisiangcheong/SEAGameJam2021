@@ -5,7 +5,7 @@
 			<value>Dave</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{6e290de2-9a72-4844-ad2d-8152e3ee20a3}</destination>
@@ -113,7 +113,6 @@
 	<object class="MixerBusEffectChain" id="{79a87aee-17c8-4b0f-8005-488807c9d9a8}">
 		<relationship name="effects">
 			<destination>{d7fb7a61-2895-4258-a26d-caf346d9d3c4}</destination>
-			<destination>{24befa41-c0be-4a5c-97fa-3d5926c92ecb}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{70647ebd-2b0c-4066-9738-0b2a8a238d79}" />
@@ -125,10 +124,5 @@
 	</object>
 	<object class="MixerBusPanner" id="{68d0967a-6ded-4732-b3f6-5d3def09cd40}" />
 	<object class="MixerBusFader" id="{d7fb7a61-2895-4258-a26d-caf346d9d3c4}" />
-	<object class="SpatialiserEffect" id="{24befa41-c0be-4a5c-97fa-3d5926c92ecb}">
-		<property name="maximumDistance">
-			<value>60</value>
-		</property>
-	</object>
 	<object class="MixerBusFader" id="{a037c88a-c2cb-4c25-a097-c86c9ffd7c66}" />
 </objects>

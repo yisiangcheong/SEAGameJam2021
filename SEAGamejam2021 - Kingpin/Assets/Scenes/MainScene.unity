@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1555,6 +1555,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2291498282100522873, guid: 515420342ed215748a202ce133b6374c,
+        type: 3}
+      propertyPath: ExplosionEvent
+      value: event:/SFX/ExplosionSFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 2291498282100522873, guid: 515420342ed215748a202ce133b6374c,
+        type: 3}
+      propertyPath: MultiplierSFX
+      value: event:/SFX/MultiplierSFX
+      objectReference: {fileID: 0}
     - target: {fileID: 2534133291241628640, guid: 515420342ed215748a202ce133b6374c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1612,34 +1622,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 515420342ed215748a202ce133b6374c, type: 3}
---- !u!1 &306400087 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1235372917277354200, guid: 515420342ed215748a202ce133b6374c,
-    type: 3}
-  m_PrefabInstance: {fileID: 306400086}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &306400088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 306400087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdd8d37ac60107a41af55acfab760409, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerHurtEvent: event:/SFX/PlayerHurtSFX
-  PlayerPunchEvent: event:/SFX/PunchWhoosh
-  ExplosionEvent: event:/SFX/ExplosionSFX
-  PinAttackEvent: event:/SFX/PinAttackSFX
-  GiantPinAttackEvent: event:/SFX/GiantPinAttackSFX
-  PinHurtEvent: event:/SFX/PinHurtSFX
-  PinBowlingStrikeEvent: event:/SFX/BowlingStrike
-  MultiplierSFX: event:/SFX/MultiplierSFX
-  AnikiEvent: event:/SFX/AnikiSFX
-  SussyBakaEvent: event:/SFX/YouSussyBakaSFX
 --- !u!1 &308322351
 GameObject:
   m_ObjectHideFlags: 0
