@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1632,10 +1632,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerHurtEvent: event:/SFX/PlayerHurtSFX
   PlayerPunchEvent: event:/SFX/PunchWhoosh
+  ExplosionEvent: event:/SFX/ExplosionSFX
   PinAttackEvent: event:/SFX/PinAttackSFX
   GiantPinAttackEvent: event:/SFX/GiantPinAttackSFX
   PinHurtEvent: event:/SFX/PinHurtSFX
   PinBowlingStrikeEvent: event:/SFX/BowlingStrike
+  MultiplierSFX: event:/SFX/MultiplierSFX
   AnikiEvent: event:/SFX/AnikiSFX
   SussyBakaEvent: event:/SFX/YouSussyBakaSFX
 --- !u!1 &308322351
@@ -3890,6 +3892,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7667088328874491278, guid: 631e2080298442d4da004667dc14e4d8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.22
+      objectReference: {fileID: 0}
     - target: {fileID: 7667088328874491292, guid: 631e2080298442d4da004667dc14e4d8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3898,7 +3905,7 @@ PrefabInstance:
     - target: {fileID: 7667088328874491292, guid: 631e2080298442d4da004667dc14e4d8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.260247
+      value: 11.22
       objectReference: {fileID: 0}
     - target: {fileID: 7667088328874491292, guid: 631e2080298442d4da004667dc14e4d8,
         type: 3}
@@ -3950,6 +3957,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: HenchmanPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 7667088328886086822, guid: 631e2080298442d4da004667dc14e4d8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 97942cb5527e6f24eb8b8f5c86f8744d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 631e2080298442d4da004667dc14e4d8, type: 3}
 --- !u!1 &859089478

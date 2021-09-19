@@ -13,12 +13,6 @@ public class GroundPound : MonoBehaviour
         playerRigidbody = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnCollisionEnter(Collision collision)
     {
         print("collided with something");
@@ -29,6 +23,8 @@ public class GroundPound : MonoBehaviour
             print("Hit the ground");
             GameObject temp = Instantiate(groundPoundShockwavePrefab);
             temp.transform.position = collision.GetContact(0).point;
+
+            AudioManager.Instance.Play2DSFX(AudioManager.Instance.ExplosionEvent);
             
             temp.transform.localScale = new Vector3(temp.transform.localScale.x * currentVelocity, temp.transform.localScale.y, temp.transform.localScale.z * currentVelocity);
         }

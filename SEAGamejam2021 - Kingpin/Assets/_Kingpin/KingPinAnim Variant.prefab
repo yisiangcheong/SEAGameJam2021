@@ -2791,6 +2791,11 @@ PrefabInstance:
       propertyPath: InitialModule.startSize.scalar
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8580220412613379573, guid: 99227ed13bfb9ae4fb6387ef5f0c58ae,
+        type: 3}
+      propertyPath: moveWithTransform
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99227ed13bfb9ae4fb6387ef5f0c58ae, type: 3}
 --- !u!4 &192689113098073481 stripped
@@ -2891,6 +2896,11 @@ PrefabInstance:
         type: 3}
       propertyPath: InitialModule.startSize.scalar
       value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8580220412613379573, guid: 99227ed13bfb9ae4fb6387ef5f0c58ae,
+        type: 3}
+      propertyPath: moveWithTransform
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99227ed13bfb9ae4fb6387ef5f0c58ae, type: 3}

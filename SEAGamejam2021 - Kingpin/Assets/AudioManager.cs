@@ -13,6 +13,9 @@ public class AudioManager : MonoBehaviour
     [FMODUnity.EventRef]
     public string PlayerPunchEvent = "";
 
+    [FMODUnity.EventRef]
+    public string ExplosionEvent = "";
+
     [Header("Pin SFX Events")]
     [FMODUnity.EventRef]
     public string PinAttackEvent = "";
@@ -46,6 +49,11 @@ public class AudioManager : MonoBehaviour
     private void OnEnable()
     {
         DontDestroyOnLoad(gameObject);
+    }
+
+    public void Play2DSFX(string targetEvent)
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(targetEvent, Vector3.zero);
     }
 
     public void PlaySFX(string targetEvent, GameObject targetGO)
