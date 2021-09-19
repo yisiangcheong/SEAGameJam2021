@@ -150,7 +150,7 @@ MonoBehaviour:
   moveSpeed: 10
   minHuntRange: 50
   attackRange: 5
-  attackDelay: 0.5
+  attackDelay: 0.75
   leanForce: 0.1
   forwardJumpForce: 7
   upwardJumpForce: 7
