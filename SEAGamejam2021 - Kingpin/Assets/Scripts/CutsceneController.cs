@@ -9,6 +9,7 @@ public class CutsceneController : MonoBehaviour
 {
     [Header("Components")]
     [SerializeField] Image fade = null;
+    [SerializeField] RawImage videoDisplay = null;
     [SerializeField] VideoPlayer videoPlayer = null;
 
     [Header("Settings")]
@@ -19,6 +20,8 @@ public class CutsceneController : MonoBehaviour
 
     Color transparent = new Color(0.0f, 0.0f, 0.0f, 0.0f);
     Color fullAlpha = new Color(0.0f, 0.0f, 0.0f, 1.0f);
+
+    Color fullWhite = new Color(1.0f, 1.0f, 1.0f, 1.0f);
 
     Coroutine splashScreenRoutine = null;
 
@@ -31,6 +34,8 @@ public class CutsceneController : MonoBehaviour
     IEnumerator SplashscreenRoutine()
     {
         yield return new WaitForSeconds(playbackDelay);
+
+        videoDisplay.color = fullWhite;
 
         videoPlayer.Play();
 
