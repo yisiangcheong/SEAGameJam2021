@@ -30,6 +30,8 @@ public class LaunchBalls : MonoBehaviour
     bool isGroundPounding = false;
     int layerMask = 0;
     [SerializeField] float groundPoundMinHeight = 1f;
+    [SerializeField] ParticleSystem leftWindTrailParticleSystem = null;
+    [SerializeField] ParticleSystem rightWindTrailParticleSystem = null;
 
     // Start is called before the first frame update
     void Start()
@@ -75,6 +77,7 @@ public class LaunchBalls : MonoBehaviour
                 LaunchBall(rightBall, currentForce);
                 StartCoroutine(SetKinematicBoolsRoutine(0.0f));
                 rightHandMode = false;//swaps hand to launch
+                StartCoroutine(PlayWindTrailRoutine(rightWindTrailParticleSystem, rightBall, 0f));
             }
             else
             {
@@ -82,6 +85,7 @@ public class LaunchBalls : MonoBehaviour
                 LaunchBall(leftBall, currentForce);
                 StartCoroutine(SetKinematicBoolsRoutine(0.0f));
                 rightHandMode = true;//swaps hand to launch
+                StartCoroutine(PlayWindTrailRoutine(leftWindTrailParticleSystem, leftBall, 0f));
             }
             ResetForce();
         }
@@ -256,8 +260,25 @@ public class LaunchBalls : MonoBehaviour
         rightHandMode = !rightHandMode;
 
         Vector3 tempVelocity = new Vector3(0, -velocity, 0);
-        playerRigidbody.velocity = tempVelocity;
-        leftBall.velocity = tempVelocity;
-        rightBall.velocity = tempVelocity;
+        //playerRigidbody.velocity = tempVelocity;
+        //leftBall.velocity = tempVelocity;
+        //rightBall.velocity = tempVelocity;
+        playerRigidbody.AddForce(tempVelocity, ForceMode.Impulse);
+        leftBall.AddForce(tempVelocity, ForceMode.Impulse);
+        rightBall.AddForce(tempVelocity, ForceMode.Impulse);
+    }
+
+    void PlayWindTrail(ParticleSystem windTrail, Rigidbody ball)
+    {
+        windTrail.transform.rotation = Quaternion.LookRotation(ball.velocity);
+        windTrail.Play();
+    }
+
+    IEnumerator PlayWindTrailRoutine(ParticleSystem windTrail, Rigidbody ball, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        windTrail.transform.rotation = Quaternion.LookRotation(ball.velocity);
+        windTrail.Play();
+        yield break;
     }
 }
