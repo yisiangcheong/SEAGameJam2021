@@ -16,6 +16,7 @@ public class PlayerHandCollider : MonoBehaviour
     Coroutine checkInputRoutine = null;
     Coroutine releasePowerRoutine = null;
 
+    public float currentMultiplierPower { get; private set; } = 1.0f;
     public bool IsAttacking { get { return launchBalls.isAttacking; } }
 
     private void OnEnable()
@@ -39,6 +40,8 @@ public class PlayerHandCollider : MonoBehaviour
         fixedJoint.massScale = 1.0f;
         fixedJoint.connectedMassScale = 1.0f;
 
+        currentMultiplierPower = 1.0f;
+
         rigidBody.mass = 1.0f;
     }
 
@@ -47,6 +50,8 @@ public class PlayerHandCollider : MonoBehaviour
         float totalPower = (MultiplierMenu.currentMultiplierPower <= empoweredLimit) ? MultiplierMenu.currentMultiplierPower : empoweredLimit;
         totalPower = totalPower / powerDampen;
         if (totalPower < 1.0) totalPower = 1.0f;
+
+        currentMultiplierPower = totalPower;
 
         springJoint.spring = 100.0f - (totalPower * 4.0f);
 
