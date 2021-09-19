@@ -151,7 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &7749569062914266469
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &4716244153345095826
@@ -211,7 +211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &6789457269660349758
@@ -241,7 +241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &4887372850265988737
@@ -271,7 +271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &4789314860948779612
@@ -301,7 +301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &6063259923317122063
@@ -331,7 +331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!1 &449331151583531039
@@ -391,7 +391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &6388036275921406299
@@ -421,7 +421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &7184674198512953528
@@ -451,7 +451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &6504792629949677173
@@ -481,7 +481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &6815617715805729901
@@ -511,7 +511,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &6719936997006805008
@@ -541,7 +541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &5784143547069824260
@@ -571,7 +571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &2156031931010370540
@@ -601,7 +601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &3332412825529800670
@@ -631,7 +631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &5498083388636700401
@@ -661,7 +661,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &8421352615189571022
@@ -691,7 +691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &5295989882325814511
@@ -721,7 +721,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &5973856074258726719
@@ -751,7 +751,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &7402593410023855218
@@ -781,7 +781,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!1 &1644336481314267082
@@ -841,7 +841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!1 &1804354877098705515
@@ -965,7 +965,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!114 &8923195226070830299
@@ -1009,7 +1009,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &6261469238705368547
@@ -1039,7 +1039,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &3131910593346419924
@@ -1069,7 +1069,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &2066191214366438055
@@ -1099,7 +1099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &5950731748960784556
@@ -1129,7 +1129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &1836288553209492719
@@ -1159,7 +1159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!1 &2518132221903341202
@@ -3851,7 +3851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &7032580201814615728
@@ -3881,7 +3881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &9044099584307546099
@@ -3911,7 +3911,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &3931848829323209781
@@ -3954,7 +3954,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &2487181733852221693
@@ -3984,7 +3984,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &3595371912463380608
@@ -4014,7 +4014,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &2206185618820998939
@@ -4044,7 +4044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &4954506934226014800
@@ -4074,7 +4074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &7745914416358980227
@@ -4104,7 +4104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &8573413034389512312
@@ -4134,7 +4134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &3446995051521324889
@@ -4164,7 +4164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &6431010607743646956
@@ -4194,7 +4194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &1558572161393697475
@@ -4224,7 +4224,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &1124536905091921135
@@ -4254,7 +4254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &3749044603259102367
@@ -4284,7 +4284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &5371863329068490501
@@ -4314,7 +4314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &1757130447297682336
@@ -4344,7 +4344,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &9187179959304534960
@@ -4374,7 +4374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!1 &3294319788122594405
@@ -4434,7 +4434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &15650143682712504
@@ -4464,7 +4464,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &6690030613702389578
@@ -4494,7 +4494,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &2255380999524386184
@@ -4524,7 +4524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &2972235082189784549
@@ -4554,7 +4554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &8329740008820671908
@@ -4584,7 +4584,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!1 &3772271995531741176
@@ -4708,7 +4708,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &5846838881728642337
@@ -4738,7 +4738,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &3872576986900199787
@@ -4768,7 +4768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &2722752127221434623
@@ -4798,7 +4798,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &2040070253378528356
@@ -4828,7 +4828,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &5277552075316569510
@@ -4858,7 +4858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &1325413981816970089
@@ -4888,7 +4888,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &387759086231590234
@@ -4918,7 +4918,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &4383648204232441794
@@ -4948,7 +4948,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &6241441033144942483
@@ -4978,7 +4978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!1 &4317939334120893861
@@ -5038,7 +5038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &8676987873164864194
@@ -5068,7 +5068,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &6217643409705751279
@@ -5098,7 +5098,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &6152318199554682058
@@ -5128,7 +5128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &8275034772778462945
@@ -5158,7 +5158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!1 &4880651452255851445
@@ -5282,7 +5282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &8245345626326907385
@@ -5312,7 +5312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!1 &5050764722967974119
@@ -5410,7 +5410,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &51157121989794588
@@ -5440,7 +5440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &5519491912510064836
@@ -5470,7 +5470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &7176905688118783355
@@ -5500,7 +5500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!1 &5632215970407412144
@@ -5560,7 +5560,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &7111651197535954527
@@ -5590,7 +5590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &3930937463706712744
@@ -5620,7 +5620,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &3441098297909028662
@@ -5650,7 +5650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &5754223488759631117
@@ -5680,7 +5680,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &5980275615488146400
@@ -5710,7 +5710,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &8473762067873131058
@@ -5740,7 +5740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &7809678970266907854
@@ -5770,7 +5770,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &3686566673889690467
@@ -5800,7 +5800,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &577032055124730971
@@ -5843,7 +5843,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &8989366430368213566
@@ -5873,7 +5873,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &680534967464749094
@@ -5903,7 +5903,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &7211340353328894274
@@ -5933,7 +5933,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &6056660779809353626
@@ -5963,7 +5963,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &5961997830611263793
@@ -5993,7 +5993,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &7791742507869349047
@@ -6023,7 +6023,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &533298145615377808
@@ -6053,7 +6053,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &9063577392323240951
@@ -6083,7 +6083,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &6906593329314036428
@@ -6113,7 +6113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &1877254583761259323
@@ -6143,7 +6143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &223505246343936626
@@ -6173,7 +6173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &2270765492200791744
@@ -6203,7 +6203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &796125836134205602
@@ -6233,7 +6233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &6467196314687399310
@@ -6263,7 +6263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &186384956477594112
@@ -6293,7 +6293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &6102035579181524332
@@ -6323,7 +6323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!1 &7027760334514698677
@@ -6447,7 +6447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &1616588907389856592
@@ -6477,7 +6477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &6236195292644081731
@@ -6507,7 +6507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &6383481553175023250
@@ -6537,7 +6537,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &6962016828673397982
@@ -6567,7 +6567,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &4943923655613509739
@@ -6597,7 +6597,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &4764339388548395867
@@ -6627,7 +6627,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &5682203291593343102
@@ -6657,7 +6657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &7014251143333914812
@@ -6687,7 +6687,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &7193791012667742753
@@ -6717,7 +6717,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &4782860004738157724
@@ -6747,7 +6747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &9121379931860519218
@@ -6777,7 +6777,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &928907787121776210
@@ -6807,7 +6807,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &2732146792363218659
@@ -6837,7 +6837,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &2656017373134368561
@@ -6867,7 +6867,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &8397433475149567247
@@ -6897,7 +6897,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &8626008339885891340
@@ -6927,7 +6927,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!1 &8406524841066252764
@@ -6988,7 +6988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &6358058955725654779
@@ -7018,7 +7018,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &3144776640285345213
@@ -7048,7 +7048,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &4939654076907898394
@@ -7078,7 +7078,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &5355732349285236345
@@ -7108,7 +7108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &7161849852380600138
@@ -7138,7 +7138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &3446829280739700004
@@ -7168,7 +7168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!1 &8652461264898935386
@@ -7229,7 +7229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &7459972977342733466
@@ -7259,7 +7259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &2645243091495903439
@@ -7289,7 +7289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &8399018821857916792
@@ -7319,7 +7319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &5406842285393452226
@@ -7349,7 +7349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &9127834621503274204
@@ -7379,7 +7379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &1200803470309607083
@@ -7409,7 +7409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!65 &34750487895208032
@@ -7439,7 +7439,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumCutPieces: 10
   cutPieceMultiplier: 2
-  destructableThreshold: 7
+  destructableThreshold: 10
   ExplodeForce: 100
   destructionLayer: 16
 --- !u!1001 &52409847859702010

@@ -96,7 +96,7 @@ MonoBehaviour:
   turnSpeed: 10
   moveSpeed: 20
   minHuntRange: 50
-  minimumMultiplierThreshold: 7
+  minimumMultiplierThreshold: 10
   minimumForceToDie: 10
   bowlingStrikeAmount: 10
   isMovementAllowed: 0
