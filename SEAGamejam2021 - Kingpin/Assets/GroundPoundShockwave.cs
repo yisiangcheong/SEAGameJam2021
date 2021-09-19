@@ -22,4 +22,14 @@ public class GroundPoundShockwave : MonoBehaviour
         yield return new WaitForSeconds(duration);
         Destroy(gameObject);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        PinController pin = other.GetComponent<PinController>();
+        if(pin)
+        {
+            pin.KillPin(transform.position);
+        }
+
+    }
 }

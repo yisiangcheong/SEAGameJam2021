@@ -26,13 +26,16 @@ public class LaunchBalls : MonoBehaviour
     public bool breakEarly = false;
     public bool isAttacking = false;
     public bool canGroundPound = false;
+    [SerializeField] float groundPoundVelocity = 200f;
+    bool isGroundPounding = false;
     int layerMask = 0;
     [SerializeField] float groundPoundMinHeight = 1f;
 
     // Start is called before the first frame update
     void Start()
     {
-        layerMask = 1 << LayerMask.NameToLayer("Ground");
+        layerMask = 1 << LayerMask.NameToLayer("Player");
+        layerMask = ~layerMask;
         ResetForce();//set the launcher force to min value at start
 
         //remember local positions of balls for ResetBallPositions
@@ -44,10 +47,11 @@ public class LaunchBalls : MonoBehaviour
     void Update()
     {
         RaycastHit hit;
-        if (Physics.Raycast(player.position, Vector3.down, out hit, groundPoundMinHeight, layerMask))
+        if (Physics.Raycast(player.position + Vector3.up, Vector3.down, out hit, groundPoundMinHeight + 1, layerMask))
         {
             Debug.DrawRay(player.position, Vector3.down * groundPoundMinHeight, Color.yellow);
             canGroundPound = false;
+            isGroundPounding = false;
         }
         else
         {
@@ -81,8 +85,12 @@ public class LaunchBalls : MonoBehaviour
             }
             ResetForce();
         }
-        if(Input.GetMouseButtonDown(1))
+        if(Input.GetMouseButtonDown(1) && canGroundPound && !isGroundPounding)
         {
+            print("ground pounding");
+            isGroundPounding = true;
+            ResetAllVelocities();
+            GroundPound(groundPoundVelocity);
 
         }
         //SetKinematic();
@@ -232,5 +240,24 @@ public class LaunchBalls : MonoBehaviour
         }
     }
 
-    
+    void GroundPound(float velocity)
+    {
+
+        Rigidbody[] tempRbArray = GetComponentsInChildren<Rigidbody>();
+        foreach(Rigidbody rb in tempRbArray)
+        {
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+        }
+
+        ResetBallPosition();
+        rightHandMode = !rightHandMode;
+        ResetBallPosition();
+        rightHandMode = !rightHandMode;
+
+        Vector3 tempVelocity = new Vector3(0, -velocity, 0);
+        playerRigidbody.velocity = tempVelocity;
+        leftBall.velocity = tempVelocity;
+        rightBall.velocity = tempVelocity;
+    }
 }
