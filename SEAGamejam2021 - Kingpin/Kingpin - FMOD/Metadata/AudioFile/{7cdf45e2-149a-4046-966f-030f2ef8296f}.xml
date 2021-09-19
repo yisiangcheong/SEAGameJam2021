@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{7cdf45e2-149a-4046-966f-030f2ef8296f}">
+		<property name="assetPath">
+			<value>EndingCutscene_Audio.ogg</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>22.021999999999998</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{bafd4693-1861-4e66-88a9-f975c259f59f}</destination>
+		</relationship>
+	</object>
+</objects>
