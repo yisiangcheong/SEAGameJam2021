@@ -18,6 +18,7 @@ public class CutsceneController : MonoBehaviour
     [SerializeField] float fadeOutDelay = 1f;
     [SerializeField] float fadeDuration = 1.0f;
     [SerializeField] string sceneToLoad = "";
+    [SerializeField] string audioToPlay = "event:/SFX/IntroTransatlantic";
     [SerializeField] float skipConfirmation = 2.5f;
 
     Color transparent = new Color(0.0f, 0.0f, 0.0f, 0.0f);
@@ -85,7 +86,7 @@ public class CutsceneController : MonoBehaviour
 
         videoDisplay.color = fullWhite;
 
-        AudioManager.Instance.PlaySFX("event:/SFX/IntroTransatlantic", gameObject);
+        AudioManager.Instance.PlaySFX(audioToPlay, gameObject);
         videoPlayer.Play();
 
         yield return new WaitForSeconds((float)videoPlayer.clip.length);

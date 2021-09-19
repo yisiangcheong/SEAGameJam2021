@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: f4b08898757e40841bffa9ab76189ec7
+  - enabled: 1
+    path: Assets/Scenes/DaveCutscene.unity
+    guid: 169b32379f42a1f419b849c181923362
   m_configObjects: {}
