@@ -22,7 +22,7 @@ public class MeshDestroy : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<PlayerHandCollider>() != null)
         {
-            if (collision.gameObject.GetComponent<PlayerHandCollider>().currentMultiplierPower > destructableThreshold)
+            if (MultiplierMenu.currentMultiplierPower > destructableThreshold)
             {
                 CutCascades = Mathf.RoundToInt(collision.gameObject.GetComponent<PlayerHandCollider>().currentMultiplierPower) * cutPieceMultiplier;
                 if (CutCascades > maximumCutPieces) CutCascades = maximumCutPieces;
