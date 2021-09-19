@@ -264,6 +264,19 @@ public class PinController : MonoBehaviour
         Deactivate();
     }
 
+    public void KillPin(Vector3 killerPos)
+    {
+        if (pinstate != PinState.Dead)
+        {
+            Vector3 direction = killerPos - transform.position;
+            direction = -direction.normalized;
+
+            hitEffectPooler.SpawnHitEffect(transform.position);
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.PinHurtEvent, gameObject);
+            Die(10.0f + (MultiplierMenu.currentMultiplierPower / 10.0f + 1.0f), direction, true);
+        }
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.transform.CompareTag("PinHazard") && pinstate != PinState.Dead)
