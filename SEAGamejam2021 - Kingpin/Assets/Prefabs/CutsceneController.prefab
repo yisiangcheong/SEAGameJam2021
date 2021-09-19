@@ -400,9 +400,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: {fileID: 6598819976054265934}
-  videoDisplay: {fileID: 0}
-  videoPlayer: {fileID: 0}
+  videoDisplay: {fileID: 8511339394057383027}
+  videoPlayer: {fileID: 8511339394057382988}
   playbackDelay: 0.5
   fadeOutDelay: 1
   fadeDuration: 1
-  sceneToLoad: 
+  sceneToLoad: MainScene
