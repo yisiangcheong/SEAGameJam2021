@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
@@ -10571,6 +10571,71 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437370658375331382, guid: 60f73911dd1f9764ca7a309990d669b7,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: 90.00015
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437370658375331382, guid: 60f73911dd1f9764ca7a309990d669b7,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: -3.5999298
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437370658926622741, guid: 60f73911dd1f9764ca7a309990d669b7,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -89.899826
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437370658926622741, guid: 60f73911dd1f9764ca7a309990d669b7,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: -3.5999298
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437370659560581793, guid: 60f73911dd1f9764ca7a309990d669b7,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -37.712376
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437370659560581793, guid: 60f73911dd1f9764ca7a309990d669b7,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: -0.00006198883
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437370659560581793, guid: 60f73911dd1f9764ca7a309990d669b7,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: -0.00014287233
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437370659560581795, guid: 60f73911dd1f9764ca7a309990d669b7,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.00007915497
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437370659560581795, guid: 60f73911dd1f9764ca7a309990d669b7,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0.00010019541
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437370659560581885, guid: 60f73911dd1f9764ca7a309990d669b7,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.00007009506
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437370659560581885, guid: 60f73911dd1f9764ca7a309990d669b7,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: -0.000058174133
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437370659560581889, guid: 60f73911dd1f9764ca7a309990d669b7,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: -0.000064373016
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437370659560581889, guid: 60f73911dd1f9764ca7a309990d669b7,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0.00006246567
+      objectReference: {fileID: 0}
     - target: {fileID: 8074764897005292734, guid: 60f73911dd1f9764ca7a309990d669b7,
         type: 3}
       propertyPath: m_LocalPosition.x

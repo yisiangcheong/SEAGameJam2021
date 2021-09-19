@@ -157,7 +157,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_VideoClip
       value: 
-      objectReference: {fileID: 32900000, guid: 1887ee74fb1abe24d822994c34f05ab8,
+      objectReference: {fileID: 32900000, guid: ad78ba42482f60f4bb3e008675b9e471,
         type: 3}
     - target: {fileID: 8511339394057382988, guid: 04775be6ab7682049a2ab9b87e2069ad,
         type: 3}
@@ -330,6 +330,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerHurtEvent: event:/SFX/PlayerHurtSFX
   PlayerPunchEvent: event:/SFX/PunchWhoosh
+  ExplosionEvent: 
   PinAttackEvent: event:/SFX/PinAttackSFX
   GiantPinAttackEvent: event:/SFX/GiantPinAttackSFX
   PinHurtEvent: event:/SFX/PinHurtSFX
