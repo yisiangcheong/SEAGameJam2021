@@ -1335,6 +1335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d26ffa5632d3419458aac4deb07ebde1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camFollow: {fileID: 7244182487332942427}
   minVelocityForPound: 5
   playerRigidbody: {fileID: 1437370659560581877}
   groundPoundShockwavePrefab: {fileID: 3993996581883783113, guid: de211eb0261f25c408bbb4d4f2068d5e,
