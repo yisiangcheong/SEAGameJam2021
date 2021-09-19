@@ -26,6 +26,7 @@ public class MeshDestroy : MonoBehaviour
             {
                 CutCascades = Mathf.RoundToInt(collision.gameObject.GetComponent<PlayerHandCollider>().currentMultiplierPower) * cutPieceMultiplier;
                 if (CutCascades > maximumCutPieces) CutCascades = maximumCutPieces;
+
                 ExplodeForce = ExplodeForce + (collision.gameObject.GetComponent<PlayerHandCollider>().currentMultiplierPower + 1.0f);
 
                 DestroyMesh();
