@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001B43FBBFF48 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000002757A3EDCE8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -23,14 +23,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 4452640
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 17472
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000005FF451EED8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000F9DC04EFC8
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF92E4960E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF92E4960B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF92E4961B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF92E496270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001B4189F6928
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9366360E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9366360B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9366361B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF936636270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000274C6750018
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='PunchWhoosh', format=5, channels=2, frequency=48000, lengthbytes=4096, lengthpcm=20600, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.891296.
@@ -39,14 +39,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 4452640
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 17472
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000005FF451EED8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000F9DC04EFC8
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF92E4960E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF92E4960B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF92E4961B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF92E496270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001B4189F7588
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9366360E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9366360B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9366361B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF936636270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000274C6750438
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='MultiplierSFX', format=5, channels=2, frequency=48000, lengthbytes=1664, lengthpcm=6242, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.277710.
@@ -55,14 +55,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 4452640
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 17472
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000005FF451EED8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000F9DC04EFC8
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF92E4960E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF92E4960B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF92E4961B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF92E496270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001B4189F7588
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9366360E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9366360B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9366361B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF936636270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000274C6750438
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='PinHurtSFX', format=5, channels=2, frequency=48000, lengthbytes=2880, lengthpcm=8106, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.891205.
@@ -71,14 +71,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 4452640
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 17472
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000005FF451EED8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000F9DC04EFC8
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF92E4960E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF92E4960B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF92E4961B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF92E496270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001B4189F7378
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9366360E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9366360B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9366361B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF936636270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000274C6750018
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='PinAttackSFX', format=5, channels=1, frequency=48000, lengthbytes=6432, lengthpcm=32660, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.891327.
@@ -87,14 +87,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 4452640
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 17472
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000005FF451EED8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000F9DC04EFC8
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF92E4960E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF92E4960B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF92E4961B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF92E496270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001B4189F7168
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9366360E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9366360B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9366361B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF936636270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000274C6750858
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='PlayerHurtSFX', format=5, channels=1, frequency=48000, lengthbytes=2208, lengthpcm=10326, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.891205.
@@ -103,53 +103,31 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 4452640
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 17472
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000005FF451EED8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000F9DC04EFC8
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF92E4960E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF92E4960B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF92E4961B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF92E496270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001B4189F6928
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9366360E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9366360B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9366361B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF936636270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000274C6750858
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='ExplosionSFX', format=5, channels=2, frequency=48000, lengthbytes=17184, lengthpcm=63895, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.891357.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 4452640
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 17472
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000005FF451EED8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF92E4960E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF92E4960B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF92E4961B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF92E496270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001B4189F6D48
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='BowlingStrike', format=5, channels=2, frequency=48000, lengthbytes=7168, lengthpcm=26319, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.891235.
-[WRN] AsyncCommandBuffer::growBuffer           : Growing command buffer to 65536 bytes. Initial command buffer size can be tuned to avoid dynamic growth using Studio::System::setAdvancedSettings()
-[LOG] SoundI::release                          : BGM1 (000001B417C48A38)
-[LOG] SoundI::release                          :     BGM1 (000001B41229CC38)
-[LOG] SoundI::release                          :     BGM1 (000001B417C4C398)
-[LOG] SoundI::release                          :  (000001B43F74F968)
-[LOG] SoundI::release                          :     PlayerHurtSFX (000001B3A9A47088)
-[LOG] SoundI::release                          :  (000001B43F74EDE8)
-[LOG] SoundI::release                          :     ExplosionSFX (000001B3A9A49788)
-[LOG] SoundI::release                          :  (000001B43F750658)
-[LOG] SoundI::release                          :     PunchWhoosh (000001B3A9A492A8)
-[LOG] SoundI::release                          :  (000001B43F754708)
-[LOG] SoundI::release                          :     PinAttackSFX (000001B3A9A4A968)
-[LOG] SoundI::release                          :  (000001B43F754598)
-[LOG] SoundI::release                          :     BowlingStrike (000001B3A9A4ACA8)
-[LOG] SoundI::release                          :  (000001B43F751628)
-[LOG] SoundI::release                          :     MultiplierSFX (000001B3A9A480C8)
-[LOG] SoundI::release                          :  (000001B43F74EF58)
-[LOG] SoundI::release                          :     PinHurtSFX (000001B3A9A4A7C8)
-[LOG] SoundI::release                          :  (000001B43F75B728)
-[LOG] SoundI::release                          :     AnikiSFX (000001B41229CF78)
+[LOG] SoundI::release                          :  (0000027573C48288)
+[LOG] SoundI::release                          :     PlayerHurtSFX (00000275AD85F588)
+[LOG] SoundI::release                          :  (0000027573C46E68)
+[LOG] SoundI::release                          :     PunchWhoosh (00000275AD85F0A8)
+[LOG] SoundI::release                          :  (0000027573C46458)
+[LOG] SoundI::release                          :     MultiplierSFX (00000275AD85F248)
+[LOG] SoundI::release                          :  (0000027573C455F8)
+[LOG] SoundI::release                          :     PinHurtSFX (00000275AD85FC08)
+[LOG] SoundI::release                          :  (0000027573C48848)
+[LOG] SoundI::release                          :     PinAttackSFX (00000275AD85F3E8)
+[LOG] SoundI::release                          :  (0000027573C43938)
+[LOG] SoundI::release                          :     AnikiSFX (000002757A4D3E58)
+[LOG] SoundI::release                          :  (0000027573C483F8)
+[LOG] SoundI::release                          :     ExplosionSFX (00000275AD85F8C8)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
