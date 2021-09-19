@@ -1202,10 +1202,31 @@ retry:
             }
         }
 
+        public static void PlayOneShot(string path, float param, Vector3 position = new Vector3())
+        {
+            try
+            {
+                PlayOneShot(PathToGUID(path), param, position);
+            }
+            catch (EventNotFoundException)
+            {
+                Debug.LogWarning("[FMOD] Event not found: " + path);
+            }
+        }
+
         public static void PlayOneShot(Guid guid, Vector3 position = new Vector3())
         {
             var instance = CreateInstance(guid);
             instance.set3DAttributes(RuntimeUtils.To3DAttributes(position));
+            instance.start();
+            instance.release();
+        }
+
+        public static void PlayOneShot(Guid guid, float parameterValue, Vector3 position = new Vector3())
+        {
+            var instance = CreateInstance(guid);
+            instance.set3DAttributes(RuntimeUtils.To3DAttributes(position));
+            instance.setParameterByName("MultiplierPitch", parameterValue);
             instance.start();
             instance.release();
         }

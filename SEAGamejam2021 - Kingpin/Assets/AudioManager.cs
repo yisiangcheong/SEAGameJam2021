@@ -26,6 +26,10 @@ public class AudioManager : MonoBehaviour
     [FMODUnity.EventRef]
     public string PinBowlingStrikeEvent = "";
 
+    [Header("Multiplier SFX Events")]
+    [FMODUnity.EventRef]
+    public string MultiplierSFX = "";
+
     [Header("Dialogue/Voice SFX Events")]
     [FMODUnity.EventRef]
     public string AnikiEvent = "";
@@ -39,8 +43,18 @@ public class AudioManager : MonoBehaviour
         else Destroy(gameObject);
     }
 
+    private void OnEnable()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     public void PlaySFX(string targetEvent, GameObject targetGO)
     {
         FMODUnity.RuntimeManager.PlayOneShotAttached(targetEvent, targetGO);
+    }
+
+    public void PlayMultiplierSFX(float param)
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(MultiplierSFX, param, Vector3.zero);
     }
 }

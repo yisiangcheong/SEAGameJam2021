@@ -5,7 +5,7 @@
 			<value>YouSussyBakaSFX</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{6e290de2-9a72-4844-ad2d-8152e3ee20a3}</destination>
@@ -113,7 +113,6 @@
 	<object class="MixerBusEffectChain" id="{4627b255-137d-403c-bf93-95702ff2679c}">
 		<relationship name="effects">
 			<destination>{7e0d0c24-860c-4c0c-a669-a8b6aaae4c75}</destination>
-			<destination>{1ac248a8-d96e-48aa-86ee-7d6adfc0be92}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{b3beb0a1-3b45-49eb-808e-20764d526bda}" />
@@ -125,10 +124,5 @@
 	</object>
 	<object class="MixerBusPanner" id="{1b3bc743-377a-4b62-a647-8ba50965963b}" />
 	<object class="MixerBusFader" id="{7e0d0c24-860c-4c0c-a669-a8b6aaae4c75}" />
-	<object class="SpatialiserEffect" id="{1ac248a8-d96e-48aa-86ee-7d6adfc0be92}">
-		<property name="maximumDistance">
-			<value>60</value>
-		</property>
-	</object>
 	<object class="MixerBusFader" id="{309b6a7a-df6b-4279-a98a-6d3c02f8dd2e}" />
 </objects>

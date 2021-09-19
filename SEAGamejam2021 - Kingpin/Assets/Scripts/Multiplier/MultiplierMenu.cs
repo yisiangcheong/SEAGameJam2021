@@ -70,6 +70,12 @@ public class MultiplierMenu : MonoBehaviour
     {
         totalHitCount += 1;
 
+        float multiplierPitch = (float)totalHitCount / 20;
+
+        Debug.Log("Pitch: " + multiplierPitch);
+
+        AudioManager.Instance.PlayMultiplierSFX(multiplierPitch);
+
         for (int i = 0; i < multiplierLabels.Length; i++)
             multiplierLabels[i].text = (totalHitCount == 1) ? $"<size=65>x </size><size=130>{totalHitCount}</size>Pin" : $"<size=65>x </size><size=130>{totalHitCount}</size>Pins";
 
