@@ -813,7 +813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bedcc7e01e7cf9a46ac43284cbdf6eb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bigPinController: {fileID: 0}
+  bigPinController: {fileID: 2628699267824954961}
 --- !u!1 &5009160286587765116
 GameObject:
   m_ObjectHideFlags: 0
