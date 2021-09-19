@@ -85,6 +85,7 @@ public class CutsceneController : MonoBehaviour
 
         videoDisplay.color = fullWhite;
 
+        AudioManager.Instance.PlaySFX("event:/SFX/IntroTransatlantic", gameObject);
         videoPlayer.Play();
 
         yield return new WaitForSeconds((float)videoPlayer.clip.length);
