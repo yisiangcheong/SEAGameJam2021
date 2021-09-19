@@ -21,6 +21,7 @@ public class PinController : MonoBehaviour
     [SerializeField] MeshRenderer[] meshRenderers = null;
     [SerializeField] PinAttackCollider pinAttackCollider = null;
     [SerializeField] PinModelCollider pinModelCollider = null;
+    [SerializeField] Animation anim = null;
 
     [Header("Settings")]
     [SerializeField] float cascadeMultiplier = 1.5f;
@@ -42,6 +43,8 @@ public class PinController : MonoBehaviour
 
     //if TotalHitCount % bowlingStrikeAmount == 0, play the strike SFX
     [SerializeField] int bowlingStrikeAmount = 10;
+
+    public bool isMovementAllowed = false;
 
     [Header("Preview Controls")]
     [SerializeField] bool selfInit = false;
@@ -96,6 +99,9 @@ public class PinController : MonoBehaviour
 
     public void Die(float launchForce, Vector3 direction, bool addToScore, bool instantDecoration = false)
     {
+        anim.Stop();
+        anim.enabled = false;
+
         pinstate = PinState.Dead;
         StopAllCoroutines();
 
@@ -164,12 +170,15 @@ public class PinController : MonoBehaviour
                 continue;
             }
 
-            targetDirection = target.position - transform.position;
-            newDirection = Vector3.RotateTowards(transform.forward, targetDirection, turnSpeed * Time.deltaTime, 0.0f);
+            if (isMovementAllowed)
+            {
+                targetDirection = target.position - transform.position;
+                newDirection = Vector3.RotateTowards(transform.forward, targetDirection, turnSpeed * Time.deltaTime, 0.0f);
 
-            transform.rotation = Quaternion.LookRotation(newDirection);
+                transform.rotation = Quaternion.LookRotation(newDirection);
 
-            transform.position = transform.position + (transform.forward * (moveSpeed * Time.deltaTime));
+                transform.position = transform.position + (transform.forward * (moveSpeed * Time.deltaTime));
+            }
 
             if (Vector3.Distance(transform.position, target.position) <= attackRange) break;
 
@@ -177,6 +186,8 @@ public class PinController : MonoBehaviour
         }
 
         float timer = 0.0f;
+
+        pinstate = PinState.Attack;
 
         while (timer < attackDelay)
         {

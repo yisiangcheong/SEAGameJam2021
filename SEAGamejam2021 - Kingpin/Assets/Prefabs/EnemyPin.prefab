@@ -141,6 +141,7 @@ MonoBehaviour:
   - {fileID: 1371378197030118442}
   pinAttackCollider: {fileID: 6798489786353734635}
   pinModelCollider: {fileID: 5035054075558202526}
+  anim: {fileID: 4536665287846595090}
   cascadeMultiplier: 2
   cascadeReduction: 0
   deactivationDelay: 10
@@ -155,6 +156,7 @@ MonoBehaviour:
   upwardJumpForce: 7
   minimumForceToDie: 10
   bowlingStrikeAmount: 10
+  isMovementAllowed: 0
   selfInit: 0
   force: 10
   explodeForward: 0
@@ -171,10 +173,10 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0.25
   m_AngularDrag: 0.25
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!65 &6937132331282487469
 BoxCollider:
@@ -834,7 +836,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4044459313044972834}
-  - component: {fileID: 6629581546197155546}
+  - component: {fileID: 8914662383084615856}
+  - component: {fileID: 4536665287846595090}
   m_Layer: 12
   m_Name: AnimationRoot
   m_TagString: Untagged
@@ -857,22 +860,33 @@ Transform:
   m_Father: {fileID: 2393117169182675760}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &6629581546197155546
-Animator:
-  serializedVersion: 3
+--- !u!114 &8914662383084615856
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8284096117591674791}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1a211d275ef6b02469d383b6dedf3abd, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11c3402896bc00f4b835fba4a06c1290, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pinController: {fileID: 5867277206519679325}
+  anim: {fileID: 4536665287846595090}
+--- !u!111 &4536665287846595090
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8284096117591674791}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: a0c8154bfb6028d478cf8cdf52dba39a, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: a0c8154bfb6028d478cf8cdf52dba39a, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
