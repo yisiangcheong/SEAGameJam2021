@@ -15,7 +15,6 @@ public class CutsceneController : MonoBehaviour
 
     [Header("Settings")]
     [SerializeField] float playbackDelay = 0.5f;
-    [SerializeField] float fadeOutDelay = 1f;
     [SerializeField] float fadeDuration = 1.0f;
     [SerializeField] string sceneToLoad = "";
     [SerializeField] string audioToPlay = "event:/SFX/IntroTransatlantic";
@@ -91,8 +90,6 @@ public class CutsceneController : MonoBehaviour
 
         yield return new WaitForSeconds((float)videoPlayer.clip.length);
 
-        yield return new WaitForSeconds(fadeOutDelay);
-
         TransitionToNextScene();
     }
 
@@ -109,6 +106,15 @@ public class CutsceneController : MonoBehaviour
         }
 
         fade.color = fullAlpha;
+
+        if (string.IsNullOrWhiteSpace(sceneToLoad))
+        {
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+#else
+            Application.Quit();
+#endif
+        }
 
         SceneManager.LoadScene(sceneToLoad, LoadSceneMode.Single);
     }

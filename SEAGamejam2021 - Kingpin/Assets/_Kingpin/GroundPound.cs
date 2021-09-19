@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GroundPound : MonoBehaviour
 {
+    [SerializeField] CameraFollow camFollow = null;
     [SerializeField] float minVelocityForPound = 10f;
     [SerializeField] Rigidbody playerRigidbody = null;
     [SerializeField] GameObject groundPoundShockwavePrefab = null;
@@ -27,6 +28,7 @@ public class GroundPound : MonoBehaviour
             AudioManager.Instance.Play2DSFX(AudioManager.Instance.ExplosionEvent);
             
             temp.transform.localScale = new Vector3(temp.transform.localScale.x * currentVelocity, temp.transform.localScale.y, temp.transform.localScale.z * currentVelocity);
+            camFollow.StartCamShake(0.2f);
         }
     }
 }
